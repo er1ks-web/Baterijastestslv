@@ -33,7 +33,7 @@ export default function SignupForm() {
   if (submitted) {
     return (
       <div className="rounded-lg border border-brand-200 bg-white p-8 text-center sm:p-10">
-        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-ink text-volt-300">
+        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-ink text-iris-200">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="M5 13l4 4L19 7" />
           </svg>
@@ -126,7 +126,7 @@ export default function SignupForm() {
 
       <button
         type="submit"
-        className="mt-6 w-full rounded-md bg-ink px-6 py-3.5 text-sm font-semibold text-volt-300 transition hover:bg-brand-800 sm:w-auto"
+        className="mt-6 w-full rounded-md bg-ink px-6 py-3.5 text-sm font-semibold text-iris-200 transition hover:bg-brand-800 sm:w-auto"
       >
         Nosūtīt pieteikumu
       </button>

@@ -36,7 +36,7 @@ export default function Pricing() {
       <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <p className="font-display text-sm italic text-volt-300">Cenas</p>
+            <p className="font-display text-sm italic text-iris-200">Cenas</p>
             <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Bez slēptām izmaksām</h2>
           </div>
 
@@ -64,7 +64,7 @@ export default function Pricing() {
             <p className="mt-2 text-sm text-paper/50">Ilgums: {plan.duration}</p>
             <a
               href="#pieteikties"
-              className="mt-6 inline-block rounded-md bg-volt-300 px-6 py-3 text-sm font-semibold text-ink transition hover:bg-volt-200"
+              className="mt-6 inline-block rounded-md bg-iris-200 px-6 py-3 text-sm font-semibold text-ink transition hover:bg-iris-100"
             >
               Pieteikt šo pakalpojumu
             </a>
@@ -73,7 +73,7 @@ export default function Pricing() {
           <ul className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
             {plan.features.map((f) => (
               <li key={f} className="flex items-start gap-3 border-b border-paper/10 pb-4 text-sm text-paper/75">
-                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-paper/10 text-volt-300">
+                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-paper/10 text-iris-200">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                     <path d="M5 13l4 4L19 7" />
                   </svg>

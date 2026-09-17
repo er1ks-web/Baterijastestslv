@@ -25,7 +25,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
                 href="#pieteikties"
-                className="rounded-md bg-ink px-7 py-3.5 text-sm font-semibold text-volt-300 transition hover:bg-brand-800"
+                className="rounded-md bg-ink px-7 py-3.5 text-sm font-semibold text-iris-200 transition hover:bg-brand-800"
               >
                 Pieteikt pārbaudi
               </a>

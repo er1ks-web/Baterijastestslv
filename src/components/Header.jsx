@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { label: 'Jautājumi', hash: '#buj' },
 ]
 
-function Mark({ className = 'text-volt-300' }) {
+function Mark({ className = 'text-iris-200' }) {
   return (
     <span className={`flex h-9 w-9 items-center justify-end gap-[3px] rounded-md bg-ink px-1.5 ${className}`}>
       <span className="h-3 w-1.5 rounded-[1px] bg-current" />
@@ -73,7 +73,7 @@ export default function Header() {
           <a
             href="#pieteikties"
             onClick={goToSection('#pieteikties')}
-            className="rounded-md bg-ink px-5 py-2.5 text-sm font-semibold text-volt-300 transition hover:bg-brand-800"
+            className="rounded-md bg-ink px-5 py-2.5 text-sm font-semibold text-iris-200 transition hover:bg-brand-800"
           >
             Pieteikties →
           </a>
@@ -106,7 +106,7 @@ export default function Header() {
             <a
               href="#pieteikties"
               onClick={goToSection('#pieteikties')}
-              className="mt-2 rounded-md bg-ink px-5 py-2.5 text-center text-sm font-semibold text-volt-300"
+              className="mt-2 rounded-md bg-ink px-5 py-2.5 text-center text-sm font-semibold text-iris-200"
             >
               Pieteikties →
             </a>

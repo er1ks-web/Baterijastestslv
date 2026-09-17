@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
           <Link to="/" className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-end gap-[3px] rounded-md bg-paper/10 px-1.5 text-volt-300">
+            <span className="flex h-9 w-9 items-center justify-end gap-[3px] rounded-md bg-paper/10 px-1.5 text-iris-200">
               <span className="h-3 w-1.5 rounded-[1px] bg-current" />
               <span className="h-5 w-1.5 rounded-[1px] bg-current" />
               <span className="h-[26px] w-1.5 rounded-[1px] bg-current" />

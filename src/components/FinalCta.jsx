@@ -2,7 +2,7 @@ export default function FinalCta() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-16 md:py-24">
       <div className="flex flex-col items-center gap-6 rounded-lg bg-ink px-8 py-16 text-center text-paper sm:px-14">
-        <p className="font-display text-sm italic text-volt-300">Nākamais solis</p>
+        <p className="font-display text-sm italic text-iris-200">Nākamais solis</p>
         <h2 className="max-w-xl text-3xl font-semibold sm:text-4xl">
           Uzziniet sava akumulatora patieso stāvokli
         </h2>
@@ -11,7 +11,7 @@ export default function FinalCta() {
         </p>
         <a
           href="#pieteikties"
-          className="rounded-md bg-volt-300 px-8 py-3.5 text-sm font-semibold text-ink transition hover:bg-volt-200"
+          className="rounded-md bg-iris-200 px-8 py-3.5 text-sm font-semibold text-ink transition hover:bg-iris-100"
         >
           Pieteikt pārbaudi
         </a>
