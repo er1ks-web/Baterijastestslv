@@ -30,7 +30,7 @@ export default {
       },
       fontFamily: {
         sans: ['"Inter"', 'system-ui', 'sans-serif'],
-        display: ['"Bricolage Grotesque"', '"Inter"', 'system-ui', 'sans-serif'],
+        display: ['"Outfit"', '"Inter"', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         soft: '0 14px 34px -14px rgba(27, 22, 19, 0.25)',
