@@ -32,8 +32,8 @@ export default function SignupForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-2xl border border-brand-200 bg-brand-50 p-8 text-center sm:p-10">
-        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brand-600 text-paper">
+      <div className="rounded-lg border border-brand-200 bg-white p-8 text-center sm:p-10">
+        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-ink text-volt-300">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="M5 13l4 4L19 7" />
           </svg>
@@ -47,7 +47,7 @@ export default function SignupForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="rounded-2xl border border-ink/10 bg-white p-7 shadow-soft sm:p-9">
+    <form onSubmit={onSubmit} className="rounded-lg border border-ink/10 bg-white p-7 shadow-soft sm:p-9">
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="flex flex-col gap-1.5 text-sm">
           <span className="font-medium text-ink">Vārds, uzvārds *</span>
@@ -55,7 +55,7 @@ export default function SignupForm() {
             name="name"
             value={form.name}
             onChange={onChange}
-            className="rounded-lg border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
+            className="rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
             placeholder="Jānis Bērziņš"
           />
         </label>
@@ -65,7 +65,7 @@ export default function SignupForm() {
             name="phone"
             value={form.phone}
             onChange={onChange}
-            className="rounded-lg border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
+            className="rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
             placeholder="+371 2X XXX XXX"
           />
         </label>
@@ -76,7 +76,7 @@ export default function SignupForm() {
             name="email"
             value={form.email}
             onChange={onChange}
-            className="rounded-lg border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
+            className="rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
             placeholder="janis@epasts.lv"
           />
         </label>
@@ -86,7 +86,7 @@ export default function SignupForm() {
             name="model"
             value={form.model}
             onChange={onChange}
-            className="rounded-lg border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
+            className="rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
             placeholder="Piem., Tesla Model 3"
           />
         </label>
@@ -96,7 +96,7 @@ export default function SignupForm() {
             name="city"
             value={form.city}
             onChange={onChange}
-            className="rounded-lg border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
+            className="rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
             placeholder="Rīga"
           />
         </label>
@@ -107,7 +107,7 @@ export default function SignupForm() {
             value={form.message}
             onChange={onChange}
             rows={3}
-            className="resize-none rounded-lg border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
+            className="resize-none rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
             placeholder="Vēlamais laiks, papildu informācija..."
           />
         </label>
@@ -126,7 +126,7 @@ export default function SignupForm() {
 
       <button
         type="submit"
-        className="mt-6 w-full rounded-full bg-amber-500 px-6 py-3.5 text-sm font-semibold text-ink shadow-soft transition hover:bg-amber-400 sm:w-auto"
+        className="mt-6 w-full rounded-md bg-ink px-6 py-3.5 text-sm font-semibold text-volt-300 transition hover:bg-brand-800 sm:w-auto"
       >
         Nosūtīt pieteikumu
       </button>

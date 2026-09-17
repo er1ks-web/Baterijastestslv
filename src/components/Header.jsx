@@ -2,11 +2,21 @@ import { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const NAV_LINKS = [
-  { label: 'Kā tas strādā', hash: '#ka-tas-strada' },
-  { label: 'Ko jūs saņemat', hash: '#ko-sanemat' },
+  { label: 'Process', hash: '#process' },
+  { label: 'Atskaite', hash: '#atskaite' },
   { label: 'Cenas', hash: '#cenas' },
-  { label: 'BUJ', hash: '#buj' },
+  { label: 'Jautājumi', hash: '#buj' },
 ]
+
+function Mark({ className = 'text-volt-300' }) {
+  return (
+    <span className={`flex h-9 w-9 items-center justify-end gap-[3px] rounded-md bg-ink px-1.5 ${className}`}>
+      <span className="h-3 w-1.5 rounded-[1px] bg-current" />
+      <span className="h-5 w-1.5 rounded-[1px] bg-current" />
+      <span className="h-[26px] w-1.5 rounded-[1px] bg-current" />
+    </span>
+  )
+}
 
 export default function Header() {
   const [open, setOpen] = useState(false)
@@ -39,26 +49,20 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-700 text-paper">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <rect x="2" y="7" width="18" height="12" rx="2.5" stroke="currentColor" strokeWidth="1.8" />
-              <rect x="21" y="10.5" width="2" height="5" rx="1" fill="currentColor" />
-              <path d="M12.5 9.5 L8 14.5 H11 L9.5 17.5 L14.5 12.5 H11.5 Z" fill="#ffab29" />
-            </svg>
-          </span>
+        <Link to="/" className="flex items-center gap-2.5">
+          <Mark />
           <span className="font-display text-lg font-semibold tracking-tight text-ink">
-            Baterijas<span className="text-brand-600">tests</span>.lv
+            Baterijas<span className="italic text-brand-500">tests</span>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 md:flex">
+        <nav className="hidden items-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (
             <a
               key={link.hash}
               href={link.hash}
               onClick={goToSection(link.hash)}
-              className="text-sm font-medium text-ink/70 transition-colors hover:text-ink"
+              className="text-sm font-medium text-ink/60 transition-colors hover:text-ink"
             >
               {link.label}
             </a>
@@ -69,14 +73,14 @@ export default function Header() {
           <a
             href="#pieteikties"
             onClick={goToSection('#pieteikties')}
-            className="rounded-full bg-amber-500 px-5 py-2.5 text-sm font-semibold text-ink shadow-soft transition hover:bg-amber-400"
+            className="rounded-md bg-ink px-5 py-2.5 text-sm font-semibold text-volt-300 transition hover:bg-brand-800"
           >
-            Pieteikties pārbaudei
+            Pieteikties →
           </a>
         </div>
 
         <button
-          className="flex h-10 w-10 items-center justify-center rounded-lg border border-ink/15 md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-md border border-ink/15 md:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Izvēlne"
         >
@@ -94,7 +98,7 @@ export default function Header() {
                 key={link.hash}
                 href={link.hash}
                 onClick={goToSection(link.hash)}
-                className="rounded-lg px-2 py-2.5 text-sm font-medium text-ink/80 hover:bg-ink/5"
+                className="rounded-md px-2 py-2.5 text-sm font-medium text-ink/80 hover:bg-ink/5"
               >
                 {link.label}
               </a>
@@ -102,9 +106,9 @@ export default function Header() {
             <a
               href="#pieteikties"
               onClick={goToSection('#pieteikties')}
-              className="mt-2 rounded-full bg-amber-500 px-5 py-2.5 text-center text-sm font-semibold text-ink"
+              className="mt-2 rounded-md bg-ink px-5 py-2.5 text-center text-sm font-semibold text-volt-300"
             >
-              Pieteikties pārbaudei
+              Pieteikties →
             </a>
           </nav>
         </div>

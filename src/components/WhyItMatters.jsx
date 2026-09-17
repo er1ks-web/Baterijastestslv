@@ -1,40 +1,38 @@
-const POINTS = [
-  {
-    title: 'Nolietojumu nevar redzēt',
-    text: 'Ārēji nevainojams elektroauto var slēpt bateriju, kas zaudējusi ievērojamu daļu no sākotnējās ietilpības.',
-  },
-  {
-    title: 'Cenā tas ir tūkstoši eiro',
-    text: 'Starpība starp 90% un 78% SOH var nozīmēt vairāku tūkstošu eiro starpību auto vērtībā.',
-  },
-  {
-    title: 'Pārdevēja vārdi nav pierādījums',
-    text: '"Baterija kā jauna" ir apgalvojums. Neatkarīgs mērījums ar sertifikātu ir pierādījums.',
-  },
-]
-
 export default function WhyItMatters() {
   return (
     <section className="bg-ink text-paper">
-      <div className="mx-auto max-w-6xl px-5 py-16 md:py-20">
-        <div className="max-w-2xl">
-          <span className="text-xs font-semibold uppercase tracking-wide text-amber-400">Kāpēc tas ir svarīgi</span>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Akumulators ir dārgākā elektroauto daļa
-          </h2>
-          <p className="mt-4 text-paper/60">
-            Nomaiņa var maksāt vairākus tūkstošus eiro. Pirms pērkat vai pārdodat, ir vērts zināt precīzu
-            skaitli — nevis paļauties uz sajūtām vai borta datora rādījumu.
+      <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:grid-cols-[0.8fr_1.2fr] md:py-24">
+        <div>
+          <p className="font-display text-sm italic text-volt-300">Kāpēc tas maksā tik daudz</p>
+          <p className="mt-5 font-display text-6xl font-semibold leading-none text-volt-300 sm:text-7xl">
+            ~€1000+
+          </p>
+          <p className="mt-3 max-w-xs text-sm leading-relaxed text-paper/50">
+            Aptuvenā vērtības starpība starp elektroauto ar 90% un ar 78% SOH — atkarībā no modeļa un vecuma.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-3">
-          {POINTS.map((p) => (
-            <div key={p.title} className="rounded-2xl border border-paper/10 bg-paper/[0.04] p-6">
-              <h3 className="font-display text-lg font-semibold text-paper">{p.title}</h3>
-              <p className="mt-2.5 text-sm leading-relaxed text-paper/55">{p.text}</p>
+        <div className="space-y-7 border-t border-paper/10 pt-10 md:border-t-0 md:border-l md:pl-12 md:pt-0">
+          <p className="text-xl leading-relaxed text-paper/85">
+            Virsbūvi, riepas un salonu var novērtēt ar aci. Akumulatoru — nē. Divi ārēji identiski auto var
+            atšķirties par trešdaļu reālās kapacitātes.
+          </p>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <div>
+              <h3 className="font-display text-base font-semibold text-paper">Pērkot</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-paper/55">
+                "Baterija kā jauna" ir pārdevēja vārdi, nevis mērījums. Skaitlis dod jums pamatu sarunām
+                par cenu vai iemeslu paiet garām.
+              </p>
             </div>
-          ))}
+            <div>
+              <h3 className="font-display text-base font-semibold text-paper">Pārdodot</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-paper/55">
+                Rakstiska atskaite pierāda jūsu apgalvojumus un ļauj pamatot cenu, nevis paļauties uz
+                pircēja uzticēšanos uz vārda.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

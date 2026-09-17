@@ -1,21 +1,23 @@
+import { useState } from 'react'
+
 const PLANS = [
   {
-    name: 'SOH Standarta tests',
+    key: 'standard',
+    name: 'Standarta tests',
     price: '85',
     duration: '20–30 min',
-    featured: false,
     features: [
       'OBD diagnostika uz vietas',
-      'SOH sertifikāts (PDF)',
+      'SOH atskaite (PDF)',
       'Kapacitāte un uzlādes cikli',
       'BMS kļūdu pārbaude',
     ],
   },
   {
-    name: 'SOH Padziļinātais audits',
+    key: 'premium',
+    name: 'Padziļinātais audits',
     price: '125',
     duration: '2–4 h',
-    featured: true,
     features: [
       'Viss no Standarta testa',
       'Detalizētāka datu analīze',
@@ -26,60 +28,62 @@ const PLANS = [
 ]
 
 export default function Pricing() {
+  const [active, setActive] = useState('standard')
+  const plan = PLANS.find((p) => p.key === active)
+
   return (
     <section id="cenas" className="scroll-mt-24 bg-ink text-paper">
-      <div className="mx-auto max-w-6xl px-5 py-16 md:py-20">
-        <div className="max-w-2xl">
-          <span className="text-xs font-semibold uppercase tracking-wide text-amber-400">Cenas</span>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Caurspīdīgas cenas, bez slēptām izmaksām</h2>
-          <p className="mt-4 text-paper/60">
-            Precīzu cenu par jūsu pilsētu un auto modeli apstiprināsim pieteikuma formā vai pa tālruni.
-          </p>
-        </div>
+      <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
+        <div className="flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <p className="font-display text-sm italic text-volt-300">Cenas</p>
+            <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Bez slēptām izmaksām</h2>
+          </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
-          {PLANS.map((plan) => (
-            <div
-              key={plan.name}
-              className={`rounded-2xl border p-7 sm:p-8 ${
-                plan.featured
-                  ? 'border-amber-400/40 bg-paper/[0.06]'
-                  : 'border-paper/10 bg-paper/[0.03]'
-              }`}
-            >
-              {plan.featured && (
-                <span className="rounded-full bg-amber-500 px-3 py-1 text-[11px] font-semibold text-ink">
-                  Populārākais
-                </span>
-              )}
-              <h3 className="mt-4 font-display text-xl font-semibold">{plan.name}</h3>
-              <div className="mt-3 flex items-baseline gap-1.5">
-                <span className="text-sm text-paper/50">no</span>
-                <span className="font-display text-4xl font-bold">€{plan.price}</span>
-              </div>
-              <p className="mt-1 text-sm text-paper/50">Ilgums: {plan.duration}</p>
-              <ul className="mt-6 space-y-3">
-                {plan.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm text-paper/70">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-400" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#pieteikties"
-                className={`mt-7 block rounded-full px-5 py-3 text-center text-sm font-semibold transition ${
-                  plan.featured
-                    ? 'bg-amber-500 text-ink hover:bg-amber-400'
-                    : 'border border-paper/20 text-paper hover:border-paper/40'
+          <div className="flex rounded-md border border-paper/15 p-1">
+            {PLANS.map((p) => (
+              <button
+                key={p.key}
+                onClick={() => setActive(p.key)}
+                className={`rounded px-4 py-2 text-sm font-medium transition ${
+                  active === p.key ? 'bg-paper text-ink' : 'text-paper/60 hover:text-paper'
                 }`}
               >
-                Pieteikt
-              </a>
-            </div>
-          ))}
+                {p.name}
+              </button>
+            ))}
+          </div>
         </div>
-        <p className="mt-6 text-xs text-paper/35">* Cenas ir orientējošas — jāapstiprina reklāmdevējam pirms publicēšanas.</p>
+
+        <div className="mt-10 grid gap-10 border-t border-paper/10 pt-10 md:grid-cols-[0.6fr_1.4fr]">
+          <div>
+            <div className="flex items-baseline gap-2">
+              <span className="text-sm text-paper/50">no</span>
+              <span className="font-display text-6xl font-semibold">€{plan.price}</span>
+            </div>
+            <p className="mt-2 text-sm text-paper/50">Ilgums: {plan.duration}</p>
+            <a
+              href="#pieteikties"
+              className="mt-6 inline-block rounded-md bg-volt-300 px-6 py-3 text-sm font-semibold text-ink transition hover:bg-volt-200"
+            >
+              Pieteikt šo pakalpojumu
+            </a>
+          </div>
+
+          <ul className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
+            {plan.features.map((f) => (
+              <li key={f} className="flex items-start gap-3 border-b border-paper/10 pb-4 text-sm text-paper/75">
+                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-paper/10 text-volt-300">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                {f}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <p className="mt-8 text-xs text-paper/35">* Cenas ir orientējošas — jāapstiprina pirms publicēšanas.</p>
       </div>
     </section>
   )
