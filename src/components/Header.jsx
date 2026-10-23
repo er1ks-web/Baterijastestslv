@@ -35,13 +35,13 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 border-b transition-colors ${
-        scrolled ? 'border-ink/10 bg-white/90 backdrop-blur' : 'border-transparent bg-white'
+      className={`sticky top-0 z-50 border-b bg-white transition-colors ${
+        scrolled ? 'border-ink/10' : 'border-transparent'
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-2">
         <Link to="/" aria-label="Baterijastests.lv — sākums">
-          <Logo className="h-8 md:h-9" />
+          <Logo className="h-16 md:h-20" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

@@ -23,7 +23,7 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <section id="process" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-16 md:py-24">
+    <section id="process" className="mx-auto max-w-6xl scroll-mt-28 px-5 py-16 md:py-24">
       <div className="grid gap-10 md:grid-cols-[0.7fr_1.3fr]">
         <div>
           <p className="font-display text-sm italic text-brand-500">Process</p>

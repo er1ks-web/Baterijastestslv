@@ -35,7 +35,7 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section id="buj" className="scroll-mt-24 mx-auto max-w-4xl px-5 py-16 md:py-24">
+    <section id="buj" className="scroll-mt-28 mx-auto max-w-4xl px-5 py-16 md:py-24">
       <div className="max-w-xl">
         <p className="font-display text-sm italic text-brand-500">Jautājumi</p>
         <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Biežāk uzdotie jautājumi</h2>

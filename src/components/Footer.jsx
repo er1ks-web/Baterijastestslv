@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
           <Link to="/" className="inline-block rounded-lg bg-white p-3" aria-label="Baterijastests.lv — sākums">
-            <Logo variant="full" className="h-24 w-auto" />
+            <Logo className="h-24" />
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-paper/50">
             Neatkarīga elektroauto augstsprieguma akumulatora diagnostika. Skaidra atskaite par reālo

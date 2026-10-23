@@ -32,7 +32,7 @@ export default function Pricing() {
   const plan = PLANS.find((p) => p.key === active)
 
   return (
-    <section id="cenas" className="scroll-mt-24 bg-ink text-paper">
+    <section id="cenas" className="scroll-mt-28 bg-ink text-paper">
       <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
