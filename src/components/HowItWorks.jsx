@@ -36,7 +36,7 @@ export default function HowItWorks() {
         <ol className="relative border-l-2 border-dashed border-brand-200 pl-8 sm:pl-10">
           {STEPS.map((step, i) => (
             <li key={step.n} className={`relative ${i !== STEPS.length - 1 ? 'pb-10' : ''}`}>
-              <span className="absolute -left-[41px] flex h-8 w-8 items-center justify-center rounded-full bg-ink font-display text-xs font-semibold text-iris-200 sm:-left-[49px]">
+              <span className="absolute -left-[41px] flex h-8 w-8 items-center justify-center rounded-full bg-ink font-display text-xs font-semibold text-charge-200 sm:-left-[49px]">
                 {step.n}
               </span>
               <h3 className="font-display text-lg font-semibold text-ink">{step.title}</h3>

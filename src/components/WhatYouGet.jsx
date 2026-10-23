@@ -36,7 +36,7 @@ export default function WhatYouGet() {
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-paper/40">Atskaites paraugs</p>
                 <p className="mt-1 font-display text-lg font-semibold">Nissan Leaf 40</p>
               </div>
-              <span className="font-display text-3xl font-semibold text-iris-200">91%</span>
+              <span className="font-display text-3xl font-semibold text-charge-200">91%</span>
             </div>
 
             <div className="relative h-0 border-t-2 border-dashed border-paper/20">

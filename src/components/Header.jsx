@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import Logo from './Logo.jsx'
 
 const NAV_LINKS = [
   { label: 'Process', hash: '#process' },
@@ -7,16 +8,6 @@ const NAV_LINKS = [
   { label: 'Cenas', hash: '#cenas' },
   { label: 'Jautājumi', hash: '#buj' },
 ]
-
-function Mark({ className = 'text-iris-200' }) {
-  return (
-    <span className={`flex h-9 w-9 items-center justify-end gap-[3px] rounded-md bg-ink px-1.5 ${className}`}>
-      <span className="h-3 w-1.5 rounded-[1px] bg-current" />
-      <span className="h-5 w-1.5 rounded-[1px] bg-current" />
-      <span className="h-[26px] w-1.5 rounded-[1px] bg-current" />
-    </span>
-  )
-}
 
 export default function Header() {
   const [open, setOpen] = useState(false)
@@ -45,15 +36,12 @@ export default function Header() {
   return (
     <header
       className={`sticky top-0 z-50 border-b transition-colors ${
-        scrolled ? 'border-ink/10 bg-paper/90 backdrop-blur' : 'border-transparent bg-paper'
+        scrolled ? 'border-ink/10 bg-white/90 backdrop-blur' : 'border-transparent bg-white'
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <Link to="/" className="flex items-center gap-2.5">
-          <Mark />
-          <span className="font-display text-lg font-semibold tracking-tight text-ink">
-            Baterijas<span className="italic text-brand-500">tests</span>
-          </span>
+        <Link to="/" aria-label="Baterijastests.lv — sākums">
+          <Logo className="h-8 md:h-9" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -73,7 +61,7 @@ export default function Header() {
           <a
             href="#pieteikties"
             onClick={goToSection('#pieteikties')}
-            className="rounded-md bg-ink px-5 py-2.5 text-sm font-semibold text-iris-200 transition hover:bg-brand-800"
+            className="rounded-md bg-ink px-5 py-2.5 text-sm font-semibold text-charge-200 transition hover:bg-brand-800"
           >
             Pieteikties →
           </a>
@@ -106,7 +94,7 @@ export default function Header() {
             <a
               href="#pieteikties"
               onClick={goToSection('#pieteikties')}
-              className="mt-2 rounded-md bg-ink px-5 py-2.5 text-center text-sm font-semibold text-iris-200"
+              className="mt-2 rounded-md bg-ink px-5 py-2.5 text-center text-sm font-semibold text-charge-200"
             >
               Pieteikties →
             </a>

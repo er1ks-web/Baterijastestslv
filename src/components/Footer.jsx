@@ -1,19 +1,13 @@
 import { Link } from 'react-router-dom'
+import Logo from './Logo.jsx'
 
 export default function Footer() {
   return (
     <footer className="border-t border-paper/10 bg-ink text-paper/80">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
-          <Link to="/" className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-end gap-[3px] rounded-md bg-paper/10 px-1.5 text-iris-200">
-              <span className="h-3 w-1.5 rounded-[1px] bg-current" />
-              <span className="h-5 w-1.5 rounded-[1px] bg-current" />
-              <span className="h-[26px] w-1.5 rounded-[1px] bg-current" />
-            </span>
-            <span className="font-display text-lg font-semibold text-paper">
-              Baterijas<span className="italic text-brand-300">tests</span>
-            </span>
+          <Link to="/" className="inline-block rounded-lg bg-white p-3" aria-label="Baterijastests.lv — sākums">
+            <Logo variant="full" className="h-24 w-auto" />
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-paper/50">
             Neatkarīga elektroauto augstsprieguma akumulatora diagnostika. Skaidra atskaite par reālo
