@@ -31,18 +31,18 @@ const FAQS = [
   },
 ]
 
-export default function Faq() {
+export default function Faq({ items = FAQS, id = 'buj', title = 'Biežāk uzdotie jautājumi' }) {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section id="buj" className="scroll-mt-28 mx-auto max-w-4xl px-5 py-16 md:py-24">
+    <section id={id}className="scroll-mt-28 mx-auto max-w-4xl px-5 py-16 md:py-24">
       <div className="max-w-xl">
         <p className="font-display text-sm italic text-brand-500">Jautājumi</p>
-        <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Biežāk uzdotie jautājumi</h2>
+        <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">{title}</h2>
       </div>
 
       <div className="mt-10 divide-y divide-ink/10 border-t border-ink/10">
-        {FAQS.map((item, i) => {
+        {items.map((item, i) => {
           const isOpen = openIndex === i
           return (
             <div key={item.q}>

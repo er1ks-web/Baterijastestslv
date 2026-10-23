@@ -4,6 +4,7 @@ import Logo from './Logo.jsx'
 
 const NAV_LINKS = [
   { label: 'Kas ir SOH', to: '/kas-ir-soh' },
+  { label: 'Uzņēmumiem', to: '/uznemumiem' },
   { label: 'Process', to: '/#process' },
   { label: 'Atskaite', to: '/#atskaite' },
   { label: 'Cenas', to: '/#cenas' },
@@ -34,7 +35,7 @@ export default function Header() {
           <Logo className="h-16 md:h-20" />
         </Link>
 
-        <nav className="hidden items-center gap-7 md:flex">
+        <nav className="hidden items-center gap-7 lg:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.to}
@@ -46,7 +47,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Link
             to="/#pieteikties"
             className="rounded-md bg-ink px-5 py-2.5 text-sm font-semibold text-charge-200 transition hover:bg-brand-800"
@@ -56,7 +57,7 @@ export default function Header() {
         </div>
 
         <button
-          className="flex h-10 w-10 items-center justify-center rounded-md border border-ink/15 md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-md border border-ink/15 lg:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Izvēlne"
         >
@@ -67,7 +68,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-ink/10 bg-paper px-5 pb-5 md:hidden">
+        <div className="border-t border-ink/10 bg-paper px-5 pb-5 lg:hidden">
           <nav className="flex flex-col gap-1 pt-3">
             {NAV_LINKS.map((link) => (
               <Link
