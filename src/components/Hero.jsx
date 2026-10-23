@@ -14,9 +14,9 @@ export default function Hero() {
       <div className="mx-auto max-w-6xl px-5 pb-14 pt-16 md:pb-20 md:pt-24">
         <div className="grid gap-14 md:grid-cols-[1.1fr_0.9fr] md:items-end">
           <div>
-            <p className="font-display text-sm italic text-brand-500">Neatkarīgs akumulatora tests</p>
+            <p className="font-display text-sm italic text-charge-200">Neatkarīgs akumulatora tests</p>
             <h1 className="mt-4 text-[2.6rem] font-semibold leading-[1.05] text-ink sm:text-6xl">
-              Baterija nolietojas klusi. <span className="text-brand-500">Skaitlis to pasaka skaļi.</span>
+              Baterija nolietojas klusi. <span className="text-charge-200">Skaitlis to pasaka skaļi.</span>
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink/75">
               20–30 minūšu diagnostikā uzzināsiet elektroauto akumulatora reālo stāvokli (SOH) un
@@ -25,7 +25,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
                 href="#pieteikties"
-                className="rounded-md bg-ink px-7 py-3.5 text-sm font-semibold text-charge-200 transition hover:bg-brand-800"
+                className="rounded-md bg-charge-200 px-7 py-3.5 text-sm font-semibold text-night transition hover:bg-charge-100"
               >
                 Pieteikt pārbaudi
               </a>
@@ -39,7 +39,7 @@ export default function Hero() {
           </div>
 
           <div>
-            <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-soft">
+            <div className="rounded-lg border border-ink/10 bg-surface p-6 shadow-soft">
               <p className="text-xs font-semibold uppercase tracking-wide text-ink/55">
                 Tipiska kapacitātes līkne
               </p>

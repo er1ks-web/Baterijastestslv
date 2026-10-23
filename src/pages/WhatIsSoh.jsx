@@ -56,9 +56,9 @@ export default function WhatIsSoh() {
       <section className="border-b border-ink/10 bg-canvas">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 pb-14 pt-16 md:grid-cols-[1.15fr_0.85fr] md:items-center md:pb-20 md:pt-24">
           <div>
-            <p className="font-display text-sm italic text-brand-500">Kas ir SOH</p>
+            <p className="font-display text-sm italic text-charge-200">Kas ir SOH</p>
             <h1 className="mt-4 text-4xl font-semibold leading-[1.08] text-ink sm:text-5xl">
-              SOH ir akumulatora <span className="text-brand-500">veselība procentos</span>
+              SOH ir akumulatora <span className="text-charge-200">veselība procentos</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/75">
               SOH (State of Health) parāda, cik daudz no sākotnējās kapacitātes akumulators vēl ir saglabājis.
@@ -74,13 +74,13 @@ export default function WhatIsSoh() {
           </div>
 
           <div className="space-y-4">
-            <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-soft">
-              <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">SOC — uzlādes līmenis</p>
+            <div className="rounded-lg border border-ink/10 bg-surface p-5 shadow-soft">
+              <p className="text-xs font-semibold uppercase tracking-wide text-charge-200">SOC — uzlādes līmenis</p>
               <p className="mt-2 text-sm leading-relaxed text-ink/75">
                 Rāda, cik pilna ir &ldquo;tvertne&rdquo; tieši tagad. Mainās katru dienu.
               </p>
             </div>
-            <div className="rounded-lg bg-ink p-5 text-paper shadow-soft">
+            <div className="rounded-lg bg-night p-5 text-paper shadow-soft">
               <p className="text-xs font-semibold uppercase tracking-wide text-charge-200">SOH — veselības stāvoklis</p>
               <p className="mt-2 text-sm leading-relaxed text-paper/65">
                 Rāda, cik liela tā &ldquo;tvertne&rdquo; vēl ir salīdzinājumā ar jaunu. Mainās lēni — un atpakaļ
@@ -93,7 +93,7 @@ export default function WhatIsSoh() {
 
       <section id="kalkulators" className="mx-auto max-w-6xl scroll-mt-28 px-5 py-16 md:py-24">
         <div className="max-w-2xl">
-          <p className="font-display text-sm italic text-brand-500">Izmēģiniet paši</p>
+          <p className="font-display text-sm italic text-charge-200">Izmēģiniet paši</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Ko SOH nozīmē tieši jūsu auto</h2>
           <p className="mt-4 text-ink/75">
             Izvēlieties modeli, pavelciet slīdni un redziet, kā procenti pārvēršas kilometros un eiro.
@@ -104,15 +104,15 @@ export default function WhatIsSoh() {
         </div>
       </section>
 
-      <section className="border-y border-ink/10 bg-white">
+      <section className="border-y border-ink/10 bg-surface">
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
           <div className="max-w-2xl">
-            <p className="font-display text-sm italic text-brand-500">Rezultāta nozīme</p>
+            <p className="font-display text-sm italic text-charge-200">Rezultāta nozīme</p>
             <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Kā lasīt SOH</h2>
           </div>
           <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4">
             {SCALE.map((s) => (
-              <div key={s.range} className="bg-white p-6">
+              <div key={s.range} className="bg-surface p-6">
                 <div className={`h-1.5 w-12 rounded-full ${s.bar}`} />
                 <p className="mt-4 font-display text-2xl font-semibold text-ink">{s.range}</p>
                 <p className="mt-1 text-sm font-semibold text-ink/80">{s.label}</p>
@@ -121,8 +121,8 @@ export default function WhatIsSoh() {
             ))}
           </div>
 
-          <div className="mt-8 rounded-lg border border-brand-200 bg-brand-50 p-6 sm:p-8">
-            <p className="font-display text-sm italic text-brand-600">Euro 7 un garantija</p>
+          <div className="mt-8 rounded-lg border border-brand-500/30 bg-brand-500/10 p-6 sm:p-8">
+            <p className="font-display text-sm italic text-charge-200">Euro 7 un garantija</p>
             <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink/80">
               Jauniem automobiļiem ES Euro 7 regula (Regula (ES) 2024/1257) paredz minimālu akumulatora izturību:
               vismaz 80% kapacitātes pēc 5 gadiem vai 100 000 km un vismaz 72% pēc 8 gadiem vai 160 000 km. Šīs
@@ -135,14 +135,14 @@ export default function WhatIsSoh() {
 
       <section className="mx-auto max-w-6xl px-5 py-16 md:py-24">
         <div className="max-w-2xl">
-          <p className="font-display text-sm italic text-brand-500">Kā to uzzināt</p>
+          <p className="font-display text-sm italic text-charge-200">Kā to uzzināt</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Trīs veidi, kā novērtēt akumulatoru</h2>
           <p className="mt-4 text-ink/75">
             Ne katrs rādījums ir SOH. Lūk, ko katra metode patiesībā parāda.
           </p>
         </div>
 
-        <div className="mt-10 overflow-x-auto rounded-lg border border-ink/10 bg-white shadow-soft">
+        <div className="mt-10 overflow-x-auto rounded-lg border border-ink/10 bg-surface shadow-soft">
           <table className="w-full min-w-[640px] text-left text-sm">
             <thead>
               <tr className="border-b border-ink/10 bg-canvas text-xs uppercase tracking-wide text-ink/60">
@@ -155,7 +155,7 @@ export default function WhatIsSoh() {
             </thead>
             <tbody className="divide-y divide-ink/10">
               {METHODS.map((m) => (
-                <tr key={m.name} className={m.highlight ? 'bg-brand-50/70' : ''}>
+                <tr key={m.name} className={m.highlight ? 'bg-brand-500/10' : ''}>
                   <td className="px-5 py-4 font-display font-semibold text-ink">{m.name}</td>
                   <td className="px-5 py-4 text-ink/75">{m.shows}</td>
                   <td className="px-5 py-4 text-ink/75">{m.time}</td>
@@ -168,14 +168,14 @@ export default function WhatIsSoh() {
         </div>
         <p className="mt-4 text-sm text-ink/70">
           Gribat redzēt, kā notiek pārbaude?{' '}
-          <Link to="/#process" className="font-medium text-brand-600 underline underline-offset-2">
+          <Link to="/#process" className="font-medium text-charge-200 underline underline-offset-2">
             Skatiet procesu
           </Link>
           .
         </p>
       </section>
 
-      <section className="bg-ink text-paper">
+      <section className="bg-night text-paper">
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
           <div className="max-w-2xl">
             <p className="font-display text-sm italic text-charge-200">Kāpēc akumulators nolietojas</p>

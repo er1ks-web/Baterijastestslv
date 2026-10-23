@@ -5,7 +5,7 @@ export default function SignupSection() {
     <section id="pieteikties" className="scroll-mt-28 bg-canvas">
       <div className="mx-auto grid max-w-6xl items-start gap-12 px-5 py-16 md:grid-cols-[0.9fr_1.1fr] md:py-24">
         <div>
-          <p className="font-display text-sm italic text-brand-500">Pieteikšanās</p>
+          <p className="font-display text-sm italic text-charge-200">Pieteikšanās</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Rezervējiet savu pārbaudi</h2>
           <p className="mt-4 max-w-md text-ink/75">
             Norādiet vēlamo laiku un vietu, un mēs atbrauksim pie jums. Pēc pieteikuma sazināsimies, lai

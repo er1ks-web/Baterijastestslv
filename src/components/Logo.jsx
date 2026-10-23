@@ -8,7 +8,7 @@ export default function Logo({ className = '' }) {
       style={{ aspectRatio: '1615 / 640' }}
     >
       <img
-        src="/logo.webp"
+        src="/logo-light.webp"
         alt=""
         className="absolute max-w-none"
         style={{ width: '109.85%', left: '-5.263%', top: '-20.31%' }}

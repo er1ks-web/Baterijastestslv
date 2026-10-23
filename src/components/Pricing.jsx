@@ -10,7 +10,7 @@ const FEATURES = [
 
 export default function Pricing() {
   return (
-    <section id="cenas" className="scroll-mt-28 bg-ink text-paper">
+    <section id="cenas" className="scroll-mt-28 bg-night text-paper">
       <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
         <div className="max-w-2xl">
           <p className="font-display text-sm italic text-charge-200">Cena</p>
@@ -25,7 +25,7 @@ export default function Pricing() {
             <p className="mt-2 text-sm text-paper/50">Ilgums: 20–30 min</p>
             <Link
               to="/#pieteikties"
-              className="mt-6 inline-block rounded-md bg-charge-200 px-6 py-3 text-sm font-semibold text-ink transition hover:bg-charge-100"
+              className="mt-6 inline-block rounded-md bg-charge-200 px-6 py-3 text-sm font-semibold text-night transition hover:bg-charge-100"
             >
               Pieteikt pārbaudi
             </Link>

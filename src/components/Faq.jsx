@@ -37,7 +37,7 @@ export default function Faq({ items = FAQS, id = 'buj', title = 'Biežāk uzdoti
   return (
     <section id={id}className="scroll-mt-28 mx-auto max-w-4xl px-5 py-16 md:py-24">
       <div className="max-w-xl">
-        <p className="font-display text-sm italic text-brand-500">Jautājumi</p>
+        <p className="font-display text-sm italic text-charge-200">Jautājumi</p>
         <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">{title}</h2>
       </div>
 

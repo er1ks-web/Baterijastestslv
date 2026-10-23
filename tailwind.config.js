@@ -4,9 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#0b1217',
+        // Dark theme: `ink` is the LIGHT foreground (text, borders, tracks).
+        ink: '#e8f0ea',
         paper: '#f4f8f4',
-        canvas: '#dbe4dd',
+        canvas: '#0a110e',
+        night: '#050908',
+        surface: '#111b16',
         brand: {
           50: '#effaf0',
           100: '#d7f3da',
@@ -34,7 +37,7 @@ export default {
         display: ['"Outfit"', '"Inter"', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        soft: '0 14px 34px -14px rgba(27, 22, 19, 0.25)',
+        soft: '0 18px 40px -18px rgba(0, 0, 0, 0.75)',
       },
     },
   },

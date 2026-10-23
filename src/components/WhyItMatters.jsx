@@ -1,6 +1,6 @@
 export default function WhyItMatters() {
   return (
-    <section className="bg-ink text-paper">
+    <section className="bg-night text-paper">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:grid-cols-[0.8fr_1.2fr] md:py-24">
         <div>
           <p className="font-display text-sm italic text-charge-200">Kāpēc tas maksā tik daudz</p>

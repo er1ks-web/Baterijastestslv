@@ -19,7 +19,7 @@ const BANDS = [
     min: 90,
     label: 'Lieliski',
     bar: 'bg-brand-500',
-    badge: 'bg-brand-100 text-brand-700',
+    badge: 'bg-brand-500/20 text-charge-200',
     title: 'Gandrīz kā jauns akumulators',
     text: 'Kapacitātes zudums ir niecīgs. Pārbaude šādam auto parasti apstiprina pārdevēja teikto.',
   },
@@ -27,7 +27,7 @@ const BANDS = [
     min: 80,
     label: 'Labi',
     bar: 'bg-lime-500',
-    badge: 'bg-lime-100 text-lime-800',
+    badge: 'bg-lime-500/20 text-lime-300',
     title: 'Normāls nolietojums 3–6 gadus vecam auto',
     text: 'Atšķirība starp 81% un 89% var nozīmēt simtiem līdz tūkstošiem eiro — vērts zināt precīzu skaitli.',
   },
@@ -35,7 +35,7 @@ const BANDS = [
     min: 70,
     label: 'Vidēji',
     bar: 'bg-amber-500',
-    badge: 'bg-amber-100 text-amber-800',
+    badge: 'bg-amber-500/20 text-amber-300',
     title: 'Zudums jau jūtams ikdienā',
     text: 'Īpaši ziemā. Tas ir pamats sarunām par cenu — un laiks pārbaudīt garantijas nosacījumus.',
   },
@@ -43,7 +43,7 @@ const BANDS = [
     min: 0,
     label: 'Zems',
     bar: 'bg-red-600',
-    badge: 'bg-red-100 text-red-700',
+    badge: 'bg-red-500/20 text-red-300',
     title: 'Ievērojams nolietojums',
     text: 'Jārēķinās ar ierobežotu nobraukumu un iespējamu akumulatora nomaiņu nākotnē.',
   },
@@ -76,7 +76,7 @@ export default function SohCalculator() {
   ]
 
   return (
-    <div className="overflow-hidden rounded-lg border border-ink/10 bg-white shadow-soft md:grid md:grid-cols-[1fr_1.05fr]">
+    <div className="overflow-hidden rounded-lg border border-ink/10 bg-surface shadow-soft md:grid md:grid-cols-[1fr_1.05fr]">
       <div className="space-y-8 p-6 sm:p-8">
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-ink/60">1 · Izvēlieties modeli</p>
@@ -89,7 +89,7 @@ export default function SohCalculator() {
                 onClick={() => setModelKey(m.key)}
                 className={`rounded-md border px-3 py-1.5 text-sm transition ${
                   m.key === modelKey
-                    ? 'border-ink bg-ink font-medium text-paper'
+                    ? 'border-charge-200 bg-charge-200 font-medium text-night'
                     : 'border-ink/15 text-ink/80 hover:border-ink/40'
                 }`}
               >
@@ -114,7 +114,7 @@ export default function SohCalculator() {
             step="1"
             value={soh}
             onChange={(e) => setSoh(Number(e.target.value))}
-            className="mt-4 h-2 w-full cursor-pointer accent-brand-600"
+            className="mt-4 h-2 w-full cursor-pointer accent-charge-300"
           />
           <div className="mt-1 flex justify-between text-xs text-ink/55">
             {[60, 70, 80, 90, 100].map((t) => (
@@ -149,7 +149,7 @@ export default function SohCalculator() {
         </div>
       </div>
 
-      <div className="bg-ink p-6 text-paper sm:p-8">
+      <div className="bg-night p-6 text-paper sm:p-8">
         <p className="text-xs font-semibold uppercase tracking-wide text-paper/45">{model.name}</p>
 
         <div className="mt-4 flex items-center gap-1.5">
@@ -206,7 +206,7 @@ export default function SohCalculator() {
 
         <Link
           to="/#pieteikties"
-          className="mt-6 inline-block rounded-md bg-charge-200 px-6 py-3 text-sm font-semibold text-ink transition hover:bg-charge-100"
+          className="mt-6 inline-block rounded-md bg-charge-200 px-6 py-3 text-sm font-semibold text-night transition hover:bg-charge-100"
         >
           Uzzināt sava auto reālo SOH
         </Link>

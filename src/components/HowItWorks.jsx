@@ -26,17 +26,17 @@ export default function HowItWorks() {
     <section id="process" className="mx-auto max-w-6xl scroll-mt-28 px-5 py-16 md:py-24">
       <div className="grid gap-10 md:grid-cols-[0.7fr_1.3fr]">
         <div>
-          <p className="font-display text-sm italic text-brand-500">Process</p>
+          <p className="font-display text-sm italic text-charge-200">Process</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">No pieteikuma līdz atskaitei</h2>
           <p className="mt-4 text-sm leading-relaxed text-ink/70">
             Viss process aizņem apmēram 30 minūtes un notiek jūsu norādītajā vietā.
           </p>
         </div>
 
-        <ol className="relative border-l-2 border-dashed border-brand-200 pl-8 sm:pl-10">
+        <ol className="relative border-l-2 border-dashed border-brand-500/30 pl-8 sm:pl-10">
           {STEPS.map((step, i) => (
             <li key={step.n} className={`relative ${i !== STEPS.length - 1 ? 'pb-10' : ''}`}>
-              <span className="absolute -left-[41px] flex h-8 w-8 items-center justify-center rounded-full bg-ink font-display text-xs font-semibold text-charge-200 sm:-left-[49px]">
+              <span className="absolute -left-[41px] flex h-8 w-8 items-center justify-center rounded-full bg-charge-200 font-display text-xs font-semibold text-night sm:-left-[49px]">
                 {step.n}
               </span>
               <h3 className="font-display text-lg font-semibold text-ink">{step.title}</h3>

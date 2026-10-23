@@ -9,10 +9,10 @@ const ITEMS = [
 
 export default function WhatYouGet() {
   return (
-    <section id="atskaite" className="scroll-mt-28 border-y border-ink/10 bg-white">
+    <section id="atskaite" className="scroll-mt-28 border-y border-ink/10 bg-surface">
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 py-16 md:grid-cols-2 md:py-24">
         <div>
-          <p className="font-display text-sm italic text-brand-500">Rezultāts</p>
+          <p className="font-display text-sm italic text-charge-200">Rezultāts</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Ko jūs saņemat</h2>
           <p className="mt-4 max-w-md text-ink/75">
             Ne tikai vienu skaitli — bet skaidru dokumentu, ko var uzrādīt pircējam, pārdevējam vai
@@ -30,7 +30,7 @@ export default function WhatYouGet() {
 
         <div className="mx-auto w-full max-w-sm">
           {/* Ticket-style summary stub */}
-          <div className="relative rounded-lg bg-ink text-paper shadow-soft">
+          <div className="relative rounded-lg bg-night text-paper shadow-soft">
             <div className="flex items-center justify-between px-6 pb-5 pt-6">
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-paper/40">Atskaites paraugs</p>
@@ -40,8 +40,8 @@ export default function WhatYouGet() {
             </div>
 
             <div className="relative h-0 border-t-2 border-dashed border-paper/20">
-              <span className="absolute -left-3 -top-3 h-6 w-6 rounded-full bg-white" />
-              <span className="absolute -right-3 -top-3 h-6 w-6 rounded-full bg-white" />
+              <span className="absolute -left-3 -top-3 h-6 w-6 rounded-full bg-surface" />
+              <span className="absolute -right-3 -top-3 h-6 w-6 rounded-full bg-surface" />
             </div>
 
             <dl className="grid grid-cols-2 gap-y-4 px-6 py-6 text-sm">

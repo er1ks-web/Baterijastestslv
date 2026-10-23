@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
@@ -13,4 +14,14 @@ body {
 h1, h2, h3, h4 {
   @apply font-display;
   letter-spacing: -0.01em;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(232 240 234 / 0.38);
+}
+
+::selection {
+  background: #5dd910;
+  color: #050908;
 }
