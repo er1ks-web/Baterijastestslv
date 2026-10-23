@@ -21,10 +21,10 @@ export default function Footer() {
           <ul className="mt-4 space-y-2.5 text-sm">
             <li><Link to="/kas-ir-soh" className="hover:text-brand-600">Kas ir SOH</Link></li>
             <li><Link to="/uznemumiem" className="hover:text-brand-600">Uzņēmumiem</Link></li>
-            <li><a href="/#process" className="hover:text-brand-600">Process</a></li>
-            <li><a href="/#cenas" className="hover:text-brand-600">Cenas</a></li>
-            <li><a href="/#buj" className="hover:text-brand-600">Jautājumi</a></li>
-            <li><a href="/#pieteikties" className="hover:text-brand-600">Pieteikties</a></li>
+            <li><Link to="/#process" className="hover:text-brand-600">Process</Link></li>
+            <li><Link to="/#cenas" className="hover:text-brand-600">Cenas</Link></li>
+            <li><Link to="/#buj" className="hover:text-brand-600">Jautājumi</Link></li>
+            <li><Link to="/#pieteikties" className="hover:text-brand-600">Pieteikties</Link></li>
           </ul>
         </div>
 
