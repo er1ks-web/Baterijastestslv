@@ -9,7 +9,7 @@ const ITEMS = [
 
 export default function WhatYouGet() {
   return (
-    <section id="atskaite" className="scroll-mt-28 border-y border-ink/10 bg-surface">
+    <section id="atskaite" className="scroll-mt-20 border-y border-ink/10 bg-surface">
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 py-16 md:grid-cols-2 md:py-24">
         <div>
           <p className="font-display text-sm italic text-charge-200">Rezultāts</p>

@@ -172,7 +172,7 @@ export default function ForBusiness() {
         </div>
       </section>
 
-      <section id="sadarbiba" className="mx-auto max-w-6xl scroll-mt-28 px-5 py-16 md:py-24">
+      <section id="sadarbiba" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-16 md:py-24">
         <div className="max-w-2xl">
           <p className="font-display text-sm italic text-charge-200">Process</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Kā notiek sadarbība</h2>
@@ -188,7 +188,7 @@ export default function ForBusiness() {
         </ol>
       </section>
 
-      <section id="piedavajums" className="scroll-mt-28 border-y border-ink/10 bg-brand-500/10">
+      <section id="piedavajums" className="scroll-mt-20 border-y border-ink/10 bg-brand-500/10">
         <div className="mx-auto grid max-w-6xl items-start gap-12 px-5 py-16 md:grid-cols-[0.9fr_1.1fr] md:py-24">
           <div>
             <p className="font-display text-sm italic text-charge-200">Sadarbības pieteikums</p>

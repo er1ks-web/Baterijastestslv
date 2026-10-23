@@ -10,7 +10,7 @@ const FEATURES = [
 
 export default function Pricing() {
   return (
-    <section id="cenas" className="scroll-mt-28 bg-night text-paper">
+    <section id="cenas" className="scroll-mt-20 bg-night text-paper">
       <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
         <div className="max-w-2xl">
           <p className="font-display text-sm italic text-charge-200">Cena</p>

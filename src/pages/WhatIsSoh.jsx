@@ -91,7 +91,7 @@ export default function WhatIsSoh() {
         </div>
       </section>
 
-      <section id="kalkulators" className="mx-auto max-w-6xl scroll-mt-28 px-5 py-16 md:py-24">
+      <section id="kalkulators" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-16 md:py-24">
         <div className="max-w-2xl">
           <p className="font-display text-sm italic text-charge-200">Izmēģiniet paši</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Ko SOH nozīmē tieši jūsu auto</h2>
