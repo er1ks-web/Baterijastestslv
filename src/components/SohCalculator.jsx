@@ -70,7 +70,7 @@ export default function SohCalculator() {
   const priceLoss = Math.round((priceNum * lossShare) / 50) * 50
 
   const bars = [
-    { label: 'Rūpnīcas dati', km: model.km, color: 'bg-paper/25' },
+    { label: 'Kad auto bija jauns', km: model.km, color: 'bg-paper/25' },
     { label: 'Tagad, ar pilnu uzlādi', km: rangeNow, color: band.bar },
     { label: 'Ziemā, reāli', km: rangeWinter, color: `${band.bar} opacity-60` },
   ]
@@ -171,7 +171,7 @@ export default function SohCalculator() {
           <div>
             <dt className="text-xs text-paper/45">Nobraukums ar pilnu uzlādi</dt>
             <dd className="mt-1 font-display text-2xl font-semibold">{fmt(rangeNow)} km</dd>
-            <p className="text-xs text-paper/40">−{fmt(model.km - rangeNow)} km pret rūpnīcas datiem</p>
+            <p className="text-xs text-paper/40">−{fmt(model.km - rangeNow)} km salīdzinājumā ar jaunu auto</p>
           </div>
         </dl>
 
