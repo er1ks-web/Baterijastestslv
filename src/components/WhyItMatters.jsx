@@ -8,13 +8,13 @@ export default function WhyItMatters() {
             ~€1000+
           </p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-paper/50">
-            Aptuvenā vērtības starpība starp elektroauto ar 90% un ar 78% SOH — atkarībā no modeļa un vecuma.
+            Aptuvenā vērtības starpība starp elektroauto ar 90% un ar 78% SOH, atkarībā no modeļa un vecuma.
           </p>
         </div>
 
         <div className="space-y-7 border-t border-paper/10 pt-10 md:border-t-0 md:border-l md:pl-12 md:pt-0">
           <p className="text-xl leading-relaxed text-paper/85">
-            Virsbūvi, riepas un salonu var novērtēt ar aci. Akumulatoru — nē. Divi ārēji identiski auto var
+            Virsbūvi, riepas un salonu var novērtēt ar aci, bet akumulatoru nevar. Divi ārēji identiski auto var
             atšķirties par trešdaļu reālās kapacitātes.
           </p>
           <div className="grid gap-6 sm:grid-cols-2">

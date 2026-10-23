@@ -7,12 +7,12 @@ export default function Footer() {
     <footer className="border-t border-ink/10 bg-surface text-ink/80">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
-          <Link to="/" className="inline-block" aria-label="Baterijastests.lv — sākums">
+          <Link to="/" className="inline-block" aria-label="Baterijastests.lv, uz sākumlapu">
             <Logo className="h-28" />
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink/75">
             Neatkarīga elektroauto augstsprieguma akumulatora diagnostika. Skaidra atskaite par reālo
-            stāvokli — pirms pērkat vai pārdodat.
+            stāvokli pirms pirkšanas vai pārdošanas.
           </p>
         </div>
 

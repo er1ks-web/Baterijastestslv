@@ -15,7 +15,7 @@ export default function WhatYouGet() {
           <p className="font-display text-sm italic text-brand-600">Rezultāts</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Ko jūs saņemat</h2>
           <p className="mt-4 max-w-md text-ink/75">
-            Ne tikai vienu skaitli — bet skaidru dokumentu, ko var uzrādīt pircējam, pārdevējam vai
+            Ne tikai vienu skaitli, bet skaidru dokumentu, ko var uzrādīt pircējam, pārdevējam vai
             izmantot sarunās par cenu.
           </p>
           <ul className="mt-7 grid gap-x-6 gap-y-3.5 sm:grid-cols-2">

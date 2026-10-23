@@ -3,7 +3,7 @@ export default function Logo({ className = '' }) {
   return (
     <span
       role="img"
-      aria-label="BaterijasTests.lv — baterijas veselības pārbaude (SOH)"
+      aria-label="BaterijasTests.lv, baterijas veselības pārbaude (SOH)"
       className={`relative block shrink-0 overflow-hidden ${className}`}
       style={{ aspectRatio: '1615 / 640' }}
     >

@@ -6,7 +6,7 @@ import FinalCta from '../components/FinalCta.jsx'
 const SCALE = [
   { range: '90–100%', label: 'Lieliski', text: 'Praktiski kā jauns akumulators.', bar: 'bg-brand-500' },
   { range: '80–89%', label: 'Labi', text: 'Normāls nolietojums, nobraukums nedaudz samazinājies.', bar: 'bg-lime-600' },
-  { range: '70–79%', label: 'Vidēji', text: 'Zudums jūtams, īpaši ziemā — svarīgi zināt pirms pirkuma.', bar: 'bg-amber-500' },
+  { range: '70–79%', label: 'Vidēji', text: 'Zudums jūtams, īpaši ziemā, tāpēc svarīgi to zināt pirms pirkuma.', bar: 'bg-amber-500' },
   { range: 'zem 70%', label: 'Zems', text: 'Ievērojams nolietojums, iespējama nomaiņa nākotnē.', bar: 'bg-red-600' },
 ]
 
@@ -36,16 +36,16 @@ const METHODS = [
 ]
 
 const FACTORS = [
-  { title: 'Karstums', text: 'Augsta temperatūra paātrina akumulatora ķīmisko novecošanu — gan braucot, gan stāvot.' },
+  { title: 'Karstums', text: 'Augsta temperatūra paātrina akumulatora ķīmisko novecošanu gan braucot, gan stāvot.' },
   { title: 'Biežas ātrās uzlādes', text: 'Regulāra uzlāde ar lielu jaudu (DC) sasilda šūnas un ilgtermiņā ātrāk iztērē kapacitāti.' },
   { title: 'Ekstrēmi uzlādes līmeņi', text: 'Ilgstoša glabāšana pie 100% vai gandrīz tukša akumulatora nodara vairāk ļauna nekā ikdienas braukšana.' },
-  { title: 'Vecums un cikli', text: 'Katrs uzlādes cikls un katrs gads atstāj pēdas — taču divi vienāda vecuma auto var atšķirties ļoti.' },
+  { title: 'Vecums un cikli', text: 'Katrs uzlādes cikls un katrs gads atstāj pēdas, taču divi vienāda vecuma auto var atšķirties ļoti.' },
 ]
 
 export default function WhatIsSoh() {
   useEffect(() => {
     const previous = document.title
-    document.title = 'Kas ir SOH — akumulatora veselības stāvoklis | Baterijastests.lv'
+    document.title = 'Kas ir SOH: akumulatora veselības stāvoklis | Baterijastests.lv'
     return () => {
       document.title = previous
     }
@@ -75,15 +75,15 @@ export default function WhatIsSoh() {
 
           <div className="space-y-4">
             <div className="rounded-lg border border-ink/10 bg-surface p-5 shadow-soft">
-              <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">SOC — uzlādes līmenis</p>
+              <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">SOC: uzlādes līmenis</p>
               <p className="mt-2 text-sm leading-relaxed text-ink/75">
                 Rāda, cik pilna ir &ldquo;tvertne&rdquo; tieši tagad. Mainās katru dienu.
               </p>
             </div>
             <div className="rounded-lg bg-night p-5 text-paper shadow-soft">
-              <p className="text-xs font-semibold uppercase tracking-wide text-brand-300">SOH — veselības stāvoklis</p>
+              <p className="text-xs font-semibold uppercase tracking-wide text-brand-300">SOH: veselības stāvoklis</p>
               <p className="mt-2 text-sm leading-relaxed text-paper/65">
-                Rāda, cik liela tā &ldquo;tvertne&rdquo; vēl ir salīdzinājumā ar jaunu. Mainās lēni — un atpakaļ
+                Rāda, cik liela tā &ldquo;tvertne&rdquo; vēl ir salīdzinājumā ar jaunu. Mainās lēni un atpakaļ
                 neatgriežas.
               </p>
             </div>

@@ -23,7 +23,7 @@ const FAQS = [
   },
   {
     q: 'Kas ir SOH un kāds rādītājs ir labs?',
-    a: 'SOH parāda, cik procentu no sākotnējās kapacitātes ir saglabājies. Virs 90% — ļoti labs, 80–90% — normāls vidēja vecuma auto, zem 80% — vērts izvērtēt rūpīgāk.',
+    a: 'SOH parāda, cik procentu no sākotnējās kapacitātes ir saglabājies. Virs 90% ir ļoti labs rādītājs, 80–90% ir normāls vidēja vecuma auto, bet zem 80% to vērts izvērtēt rūpīgāk.',
   },
   {
     q: 'Kad saņemšu rezultātu?',

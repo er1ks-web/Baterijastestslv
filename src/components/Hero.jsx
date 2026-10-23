@@ -81,7 +81,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-4 rounded-md bg-brand-500/10 px-3 py-2.5 text-center text-sm font-medium text-ink/80">
-              Atšķirība: {KM_GAP} km nobraukumā — ārēji to neredz
+              Atšķirība nobraukumā: {KM_GAP} km, ko ārēji nevar redzēt
             </p>
             <p className="mt-3 text-[11px] leading-relaxed text-ink/50">
               * Ilustratīvs piemērs. Patieso akumulatora stāvokli parāda tikai mērījums.

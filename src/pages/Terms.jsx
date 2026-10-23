@@ -19,7 +19,7 @@ export default function Terms() {
         <div>
           <h2 className="font-display text-lg font-semibold text-ink">2. Pieteikšanās un apstiprinājums</h2>
           <p className="mt-2">
-            Pieteikums mājaslapā nav galīgs pakalpojuma apstiprinājums — laiku un vietu apstiprinām,
+            Pieteikums mājaslapā nav galīgs pakalpojuma apstiprinājums. Laiku un vietu apstiprinām,
             sazinoties ar jums individuāli.
           </p>
         </div>

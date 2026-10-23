@@ -1,7 +1,7 @@
 const GROUPS = [
   {
     label: 'Pērku elektroauto',
-    text: 'Uzziniet reālo stāvokli, pirms nauda ir samaksāta — un izmantojiet skaitli kā argumentu sarunās par cenu.',
+    text: 'Uzziniet reālo stāvokli, pirms nauda ir samaksāta, un izmantojiet skaitli kā argumentu sarunās par cenu.',
   },
   {
     label: 'Pārdodu elektroauto',
@@ -13,7 +13,7 @@ const GROUPS = [
   },
   {
     label: 'Autotirgotājiem',
-    text: 'Vienota, salīdzināma pārbaude visam autoparkam — papildu uzticības arguments klientiem.',
+    text: 'Vienota, salīdzināma pārbaude visam autoparkam. Papildu uzticības arguments klientiem.',
   },
 ]
 

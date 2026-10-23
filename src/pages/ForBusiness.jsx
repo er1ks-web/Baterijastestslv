@@ -16,7 +16,7 @@ const AUDIENCES = [
   },
   {
     title: 'Līzinga kompānijas',
-    text: 'Akumulatora stāvoklis izsniegšanas un atgriešanas brīdī — pamats atlikušās vērtības aprēķinam.',
+    text: 'Akumulatora stāvoklis izsniegšanas un atgriešanas brīdī ir pamats atlikušās vērtības aprēķinam.',
   },
   {
     title: 'Autoparki un noma',
@@ -24,14 +24,14 @@ const AUDIENCES = [
   },
   {
     title: 'Apdrošinātāji un vērtētāji',
-    text: 'Neatkarīgs mērījums strīdīgos gadījumos — pēc avārijas vai ilgākas stāvēšanas.',
+    text: 'Neatkarīgs mērījums strīdīgos gadījumos, piemēram, pēc avārijas vai ilgākas stāvēšanas.',
   },
 ]
 
 const BENEFITS = [
   {
     title: 'Izbraukums pie jums',
-    text: 'Atbraucam uz jūsu stāvvietu vai salonu — auto nav jāpārvieto un darbs nepiestāj.',
+    text: 'Atbraucam uz jūsu stāvvietu vai salonu, tāpēc auto nav jāpārvieto un darbs nepiestāj.',
   },
   {
     title: 'Piedāvājums pēc jūsu apjoma',
@@ -39,7 +39,7 @@ const BENEFITS = [
   },
   {
     title: 'Katram auto sava atskaite',
-    text: 'PDF dokuments ar unikālu numuru — viegli pievienot līgumam, nodošanas aktam vai sludinājumam.',
+    text: 'PDF dokuments ar unikālu numuru, ko viegli pievienot līgumam, nodošanas aktam vai sludinājumam.',
   },
   {
     title: 'Ātrāki darījumi',
@@ -49,15 +49,15 @@ const BENEFITS = [
 
 const STEPS = [
   { title: 'Pieteikums', text: 'Norādiet, cik auto un kur tie atrodas. Darba dienā sazināmies.' },
-  { title: 'Piedāvājums', text: 'Sagatavojam cenu jūsu apjomam — ņemot vērā auto skaitu, grafiku un vietu.' },
-  { title: 'Pārbaude uz vietas', text: 'Atbraucam pie jums. Katram auto — 20–30 minūtes.' },
+  { title: 'Piedāvājums', text: 'Sagatavojam cenu jūsu apjomam, ņemot vērā auto skaitu, grafiku un vietu.' },
+  { title: 'Pārbaude uz vietas', text: 'Atbraucam pie jums. Katram auto nepieciešamas 20–30 minūtes.' },
   { title: 'Atskaites un rēķins', text: 'Katrs auto saņem savu atskaiti. Rēķinu izrakstām uzņēmumam.' },
 ]
 
 const FAQS = [
   {
     q: 'Cik maksā pārbaude uzņēmumam?',
-    a: 'Cenu veidojam individuāli — tā atkarīga no auto skaita, atrašanās vietas un grafika. Atsūtiet pieteikumu, un sagatavosim piedāvājumu jūsu apjomam.',
+    a: 'Cenu veidojam individuāli, un tā atkarīga no auto skaita, atrašanās vietas un grafika. Atsūtiet pieteikumu, un sagatavosim piedāvājumu jūsu apjomam.',
   },
   {
     q: 'Cik auto var pārbaudīt vienā vizītē?',
@@ -69,7 +69,7 @@ const FAQS = [
   },
   {
     q: 'Vai atskaiti var pievienot sludinājumam vai līgumam?',
-    a: 'Jā. Atskaite ir PDF dokuments ar unikālu numuru — to var pievienot sludinājumam, pirkuma līgumam vai nodošanas aktam.',
+    a: 'Jā. Atskaite ir PDF dokuments ar unikālu numuru, kuru var pievienot sludinājumam, pirkuma līgumam vai nodošanas aktam.',
   },
   {
     q: 'Vai rēķinu var izrakstīt uzņēmumam?',
@@ -131,7 +131,7 @@ export default function ForBusiness() {
               ))}
             </ul>
             <p className="mt-5 border-t border-dashed border-ink/15 pt-4 text-[11px] leading-relaxed text-ink/55">
-              * Ilustratīvs piemērs — tā var izskatīties vairāku auto SOH salīdzinājums.
+              * Ilustratīvs piemērs: tā var izskatīties vairāku auto SOH salīdzinājums.
             </p>
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function ForBusiness() {
             <p className="font-display text-sm italic text-brand-600">Sadarbības pieteikums</p>
             <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Pastāstiet par savu autoparku</h2>
             <p className="mt-4 max-w-md text-ink/75">
-              Aprakstiet uzdevumu — atsūtīsim piedāvājumu ar cenu, kas atbilst jūsu apjomam un grafikam.
+              Aprakstiet uzdevumu, un atsūtīsim piedāvājumu ar cenu, kas atbilst jūsu apjomam un grafikam.
             </p>
             <ul className="mt-7 space-y-3 border-t border-dashed border-ink/15 pt-6 text-sm text-ink/75">
               <li className="flex items-center gap-2.5">

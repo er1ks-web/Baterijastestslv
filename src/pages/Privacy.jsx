@@ -12,8 +12,8 @@ export default function Privacy() {
         <div>
           <h2 className="font-display text-lg font-semibold text-ink">1. Pārzinis</h2>
           <p className="mt-2">
-            Personas datu apstrādes pārzinis ir Baterijastests.lv [uzņēmuma nosaukums, reģistrācijas
-            numurs, juridiskā adrese — jāaizpilda]. Ar mums var sazināties, rakstot uz
+            Personas datu apstrādes pārzinis ir Baterijastests.lv [jāaizpilda uzņēmuma nosaukums,
+            reģistrācijas numurs un juridiskā adrese]. Ar mums var sazināties, rakstot uz
             info@baterijastests.lv.
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function Privacy() {
         <div>
           <h2 className="font-display text-lg font-semibold text-ink">6. Sīkdatnes</h2>
           <p className="mt-2">
-            [Aizpildīt, ja mājaslapa izmanto analītikas vai citas sīkdatnes — norādīt sīkdatņu veidus un
+            [Aizpildīt, ja mājaslapa izmanto analītikas vai citas sīkdatnes: norādīt sīkdatņu veidus un
             piekrišanas mehānismu.]
           </p>
         </div>

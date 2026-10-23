@@ -34,7 +34,7 @@ export default function Contact() {
       <p className="font-display text-sm italic text-brand-600">Kontakti</p>
       <h1 className="mt-3 text-4xl font-semibold text-ink sm:text-5xl">Sazinieties ar mums</h1>
       <p className="mt-4 max-w-xl text-lg text-ink/75">
-        Zvaniet, rakstiet vai uzreiz piesakiet pārbaudi — mēs atbrauksim pie jums Rīgas reģionā.
+        Zvaniet, rakstiet vai uzreiz piesakiet pārbaudi. Mēs atbrauksim pie jums Rīgas reģionā.
       </p>
 
       <div className="mt-12 grid gap-12 md:grid-cols-2">

@@ -36,7 +36,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-2">
-        <Link to="/" aria-label="Baterijastests.lv — sākums">
+        <Link to="/" aria-label="Baterijastests.lv, uz sākumlapu">
           <Logo className="h-16 md:h-20" />
         </Link>
 

@@ -29,7 +29,7 @@ const BANDS = [
     bar: 'bg-lime-600',
     badge: 'bg-lime-100 text-lime-800',
     title: 'Normāls nolietojums 3–6 gadus vecam auto',
-    text: 'Atšķirība starp 81% un 89% var nozīmēt simtiem līdz tūkstošiem eiro — vērts zināt precīzu skaitli.',
+    text: 'Atšķirība starp 81% un 89% var nozīmēt simtiem līdz tūkstošiem eiro, tāpēc vērts zināt precīzu skaitli.',
   },
   {
     min: 70,
@@ -37,7 +37,7 @@ const BANDS = [
     bar: 'bg-amber-500',
     badge: 'bg-amber-100 text-amber-800',
     title: 'Zudums jau jūtams ikdienā',
-    text: 'Īpaši ziemā. Tas ir pamats sarunām par cenu — un laiks pārbaudīt garantijas nosacījumus.',
+    text: 'Īpaši ziemā. Tas ir pamats sarunām par cenu un laiks pārbaudīt garantijas nosacījumus.',
   },
   {
     min: 0,
@@ -196,7 +196,7 @@ export default function SohCalculator() {
         <div className="mt-6 rounded-md bg-paper/[0.06] p-4">
           <p className="text-xs text-paper/45">Aptuvenais vērtības samazinājums</p>
           <p className="mt-1 font-display text-3xl font-semibold text-brand-300">
-            {priceNum > 0 ? `≈ €${fmt(priceLoss)}` : '—'}
+            {priceNum > 0 ? `≈ €${fmt(priceLoss)}` : 'Ievadiet cenu'}
           </p>
           <p className="mt-1 text-xs leading-relaxed text-paper/40">
             Orientējošs aprēķins: pieņemts, ka akumulators ir ap 30% no auto vērtības, bet zem 80% SOH zaudējums

@@ -9,7 +9,7 @@ export default function FinalCta() {
           Uzziniet sava akumulatora patieso stāvokli
         </h2>
         <p className="max-w-md text-paper/55">
-          Godīgs, neatkarīgs rezultāts 20–30 minūtēs — ar atskaiti, kam var uzticēties.
+          Godīgs, neatkarīgs rezultāts 20–30 minūtēs, ar atskaiti, kam var uzticēties.
         </p>
         <Link
           to="/#pieteikties"
