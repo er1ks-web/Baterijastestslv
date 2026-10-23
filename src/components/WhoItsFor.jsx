@@ -27,10 +27,10 @@ export default function WhoItsFor() {
 
       <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-ink/10 bg-ink/10 sm:grid-cols-2">
         {GROUPS.map((g, i) => (
-          <div key={g.label} className="bg-paper p-7">
+          <div key={g.label} className="bg-canvas p-7">
             <span className="font-display text-xs text-brand-400">{String(i + 1).padStart(2, '0')}</span>
             <h3 className="mt-2 font-display text-lg font-semibold text-ink">{g.label}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-ink/55">{g.text}</p>
+            <p className="mt-2 text-sm leading-relaxed text-ink/70">{g.text}</p>
           </div>
         ))}
       </div>

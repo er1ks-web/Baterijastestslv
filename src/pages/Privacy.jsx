@@ -3,12 +3,12 @@ export default function Privacy() {
     <section className="mx-auto max-w-3xl px-5 py-16">
       <span className="text-xs font-semibold uppercase tracking-wide text-brand-600">Juridiskā informācija</span>
       <h1 className="mt-3 text-3xl font-bold text-ink sm:text-4xl">Privātuma politika</h1>
-      <p className="mt-3 text-sm text-ink/45">
+      <p className="mt-3 text-sm text-ink/60">
         Šis ir vispārīgs paraugs. Pirms publicēšanas lūdzam pārskatīt tiesību speciālistam un aizpildīt
         uzņēmuma rekvizītus.
       </p>
 
-      <div className="prose-p:leading-relaxed mt-8 space-y-6 text-sm text-ink/70">
+      <div className="prose-p:leading-relaxed mt-8 space-y-6 text-sm text-ink/80">
         <div>
           <h2 className="font-display text-lg font-semibold text-ink">1. Pārzinis</h2>
           <p className="mt-2">

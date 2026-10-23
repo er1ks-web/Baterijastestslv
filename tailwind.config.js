@@ -6,6 +6,7 @@ export default {
       colors: {
         ink: '#0b1217',
         paper: '#f4f8f4',
+        canvas: '#dbe4dd',
         brand: {
           50: '#effaf0',
           100: '#d7f3da',

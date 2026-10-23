@@ -36,7 +36,7 @@ export default function PartnerForm() {
           </svg>
         </div>
         <h3 className="mt-4 font-display text-xl font-semibold text-ink">Pieteikums saņemts</h3>
-        <p className="mt-2 text-sm text-ink/60">
+        <p className="mt-2 text-sm text-ink/75">
           Paldies, {form.name}! Sagatavosim piedāvājumu jūsu apjomam un sazināsimies darba dienas laikā.
         </p>
       </div>
@@ -95,7 +95,7 @@ export default function PartnerForm() {
 
       {error && <p className="mt-4 text-sm font-medium text-red-600">{error}</p>}
 
-      <p className="mt-5 text-xs leading-relaxed text-ink/45">
+      <p className="mt-5 text-xs leading-relaxed text-ink/60">
         Nosūtot formu, jūs piekrītat, ka izmantosim šos datus, lai sagatavotu piedāvājumu. Vairāk mūsu{' '}
         <Link to="/privatuma-politika" className="underline">
           privātuma politikā

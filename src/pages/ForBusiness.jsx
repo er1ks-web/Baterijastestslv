@@ -88,14 +88,14 @@ export default function ForBusiness() {
 
   return (
     <>
-      <section className="border-b border-ink/10 bg-paper">
+      <section className="border-b border-ink/10 bg-canvas">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 pb-14 pt-16 md:grid-cols-[1.1fr_0.9fr] md:items-center md:pb-20 md:pt-24">
           <div>
             <p className="font-display text-sm italic text-brand-500">Uzņēmumiem</p>
             <h1 className="mt-4 text-4xl font-semibold leading-[1.08] text-ink sm:text-5xl">
               Akumulatora pārbaude <span className="text-brand-500">visam jūsu autoparkam</span>
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/60">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/75">
               Autotirgotājiem, līzinga kompānijām, nomai un vērtētājiem: skaidrs SOH rezultāts katram elektroauto un
               atskaite, ko var pievienot līgumam vai sludinājumam.
             </p>
@@ -108,7 +108,7 @@ export default function ForBusiness() {
               </a>
               <a
                 href="#sadarbiba"
-                className="text-sm font-semibold text-ink/70 underline decoration-brand-300 decoration-2 underline-offset-4 transition hover:text-ink"
+                className="text-sm font-semibold text-ink/80 underline decoration-brand-300 decoration-2 underline-offset-4 transition hover:text-ink"
               >
                 Kā notiek sadarbība
               </a>
@@ -116,7 +116,7 @@ export default function ForBusiness() {
           </div>
 
           <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-soft">
-            <p className="text-xs font-semibold uppercase tracking-wide text-ink/40">Autoparka pārskata piemērs</p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-ink/55">Autoparka pārskata piemērs</p>
             <ul className="mt-5 space-y-4">
               {FLEET.map((car) => (
                 <li key={car.model}>
@@ -130,7 +130,7 @@ export default function ForBusiness() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 border-t border-dashed border-ink/15 pt-4 text-[11px] leading-relaxed text-ink/40">
+            <p className="mt-5 border-t border-dashed border-ink/15 pt-4 text-[11px] leading-relaxed text-ink/55">
               * Ilustratīvs piemērs — tā var izskatīties vairāku auto SOH salīdzinājums.
             </p>
           </div>
@@ -147,7 +147,7 @@ export default function ForBusiness() {
             {AUDIENCES.map((a) => (
               <li key={a.title} className="grid gap-1 py-5 sm:grid-cols-[0.8fr_1.2fr] sm:gap-6">
                 <h3 className="font-display text-lg font-semibold text-ink">{a.title}</h3>
-                <p className="text-sm leading-relaxed text-ink/60">{a.text}</p>
+                <p className="text-sm leading-relaxed text-ink/75">{a.text}</p>
               </li>
             ))}
           </ul>
@@ -182,7 +182,7 @@ export default function ForBusiness() {
             <li key={s.title} className="relative border-t-2 border-ink pt-5">
               <span className="font-display text-sm font-semibold text-brand-600">{String(i + 1).padStart(2, '0')}</span>
               <h3 className="mt-2 font-display text-lg font-semibold text-ink">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink/55">{s.text}</p>
+              <p className="mt-2 text-sm leading-relaxed text-ink/70">{s.text}</p>
             </li>
           ))}
         </ol>
@@ -193,10 +193,10 @@ export default function ForBusiness() {
           <div>
             <p className="font-display text-sm italic text-brand-600">Sadarbības pieteikums</p>
             <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Pastāstiet par savu autoparku</h2>
-            <p className="mt-4 max-w-md text-ink/60">
+            <p className="mt-4 max-w-md text-ink/75">
               Aprakstiet uzdevumu — atsūtīsim piedāvājumu ar cenu, kas atbilst jūsu apjomam un grafikam.
             </p>
-            <ul className="mt-7 space-y-3 border-t border-dashed border-ink/15 pt-6 text-sm text-ink/65">
+            <ul className="mt-7 space-y-3 border-t border-dashed border-ink/15 pt-6 text-sm text-ink/75">
               <li className="flex items-center gap-2.5">
                 <span className="font-display text-xs text-brand-500">01</span> Atbilde darba dienas laikā
               </li>

@@ -14,13 +14,13 @@ export default function WhatYouGet() {
         <div>
           <p className="font-display text-sm italic text-brand-500">Rezultāts</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Ko jūs saņemat</h2>
-          <p className="mt-4 max-w-md text-ink/60">
+          <p className="mt-4 max-w-md text-ink/75">
             Ne tikai vienu skaitli — bet skaidru dokumentu, ko var uzrādīt pircējam, pārdevējam vai
             izmantot sarunās par cenu.
           </p>
           <ul className="mt-7 grid gap-x-6 gap-y-3.5 sm:grid-cols-2">
             {ITEMS.map((item) => (
-              <li key={item} className="flex items-start gap-2.5 text-sm text-ink/70">
+              <li key={item} className="flex items-start gap-2.5 text-sm text-ink/80">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-400" />
                 {item}
               </li>
@@ -40,8 +40,8 @@ export default function WhatYouGet() {
             </div>
 
             <div className="relative h-0 border-t-2 border-dashed border-paper/20">
-              <span className="absolute -left-3 -top-3 h-6 w-6 rounded-full bg-paper" />
-              <span className="absolute -right-3 -top-3 h-6 w-6 rounded-full bg-paper" />
+              <span className="absolute -left-3 -top-3 h-6 w-6 rounded-full bg-white" />
+              <span className="absolute -right-3 -top-3 h-6 w-6 rounded-full bg-white" />
             </div>
 
             <dl className="grid grid-cols-2 gap-y-4 px-6 py-6 text-sm">
@@ -63,7 +63,7 @@ export default function WhatYouGet() {
               </div>
             </dl>
           </div>
-          <p className="mt-3 text-center text-[11px] leading-relaxed text-ink/35">
+          <p className="mt-3 text-center text-[11px] leading-relaxed text-ink/50">
             * Ilustratīvs paraugs formāta demonstrēšanai, ne reāls mērījums.
           </p>
         </div>

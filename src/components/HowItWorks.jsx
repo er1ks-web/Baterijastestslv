@@ -28,7 +28,7 @@ export default function HowItWorks() {
         <div>
           <p className="font-display text-sm italic text-brand-500">Process</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">No pieteikuma līdz atskaitei</h2>
-          <p className="mt-4 text-sm leading-relaxed text-ink/55">
+          <p className="mt-4 text-sm leading-relaxed text-ink/70">
             Viss process aizņem apmēram 30 minūtes un notiek jūsu norādītajā vietā.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function HowItWorks() {
                 {step.n}
               </span>
               <h3 className="font-display text-lg font-semibold text-ink">{step.title}</h3>
-              <p className="mt-1.5 max-w-xl text-sm leading-relaxed text-ink/55">{step.text}</p>
+              <p className="mt-1.5 max-w-xl text-sm leading-relaxed text-ink/70">{step.text}</p>
             </li>
           ))}
         </ol>

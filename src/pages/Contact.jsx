@@ -33,7 +33,7 @@ export default function Contact() {
     <section className="mx-auto max-w-6xl px-5 py-16 md:py-24">
       <p className="font-display text-sm italic text-brand-500">Kontakti</p>
       <h1 className="mt-3 text-4xl font-semibold text-ink sm:text-5xl">Sazinieties ar mums</h1>
-      <p className="mt-4 max-w-xl text-lg text-ink/60">
+      <p className="mt-4 max-w-xl text-lg text-ink/75">
         Zvaniet, rakstiet vai uzreiz piesakiet pārbaudi — mēs atbrauksim pie jums Rīgas reģionā.
       </p>
 
@@ -81,7 +81,7 @@ export default function Contact() {
               const value = COMPANY.rekviziti[key]
               return (
                 <div key={key} className="grid gap-1 py-3 sm:grid-cols-[9rem_1fr] sm:gap-4">
-                  <dt className="text-ink/50">{label}</dt>
+                  <dt className="text-ink/65">{label}</dt>
                   <dd className={value ? 'break-words text-ink' : 'text-amber-600'}>{value || '[jāaizpilda]'}</dd>
                 </div>
               )

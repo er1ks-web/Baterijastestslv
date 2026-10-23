@@ -59,7 +59,7 @@ export default function Faq({ items = FAQS, id = 'buj', title = 'Biežāk uzdoti
                 </span>
               </button>
               {isOpen && (
-                <p className="max-w-xl pb-6 pl-9 text-sm leading-relaxed text-ink/55">{item.a}</p>
+                <p className="max-w-xl pb-6 pl-9 text-sm leading-relaxed text-ink/70">{item.a}</p>
               )}
             </div>
           )

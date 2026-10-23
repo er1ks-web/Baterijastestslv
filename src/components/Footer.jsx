@@ -4,54 +4,54 @@ import { COMPANY } from '../config/company.js'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-paper/10 bg-ink text-paper/80">
+    <footer className="border-t border-ink/10 bg-white/90 text-ink/80">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
-          <Link to="/" className="inline-block rounded-lg bg-white p-3" aria-label="Baterijastests.lv — sākums">
-            <Logo className="h-24" />
+          <Link to="/" className="inline-block" aria-label="Baterijastests.lv — sākums">
+            <Logo className="h-28" />
           </Link>
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-paper/50">
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink/75">
             Neatkarīga elektroauto augstsprieguma akumulatora diagnostika. Skaidra atskaite par reālo
             stāvokli — pirms pērkat vai pārdodat.
           </p>
         </div>
 
         <div>
-          <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-paper/40">Lapa</h3>
+          <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-ink/65">Lapa</h3>
           <ul className="mt-4 space-y-2.5 text-sm">
-            <li><Link to="/kas-ir-soh" className="hover:text-paper">Kas ir SOH</Link></li>
-            <li><Link to="/uznemumiem" className="hover:text-paper">Uzņēmumiem</Link></li>
-            <li><a href="/#process" className="hover:text-paper">Process</a></li>
-            <li><a href="/#cenas" className="hover:text-paper">Cenas</a></li>
-            <li><a href="/#buj" className="hover:text-paper">Jautājumi</a></li>
-            <li><a href="/#pieteikties" className="hover:text-paper">Pieteikties</a></li>
+            <li><Link to="/kas-ir-soh" className="hover:text-brand-600">Kas ir SOH</Link></li>
+            <li><Link to="/uznemumiem" className="hover:text-brand-600">Uzņēmumiem</Link></li>
+            <li><a href="/#process" className="hover:text-brand-600">Process</a></li>
+            <li><a href="/#cenas" className="hover:text-brand-600">Cenas</a></li>
+            <li><a href="/#buj" className="hover:text-brand-600">Jautājumi</a></li>
+            <li><a href="/#pieteikties" className="hover:text-brand-600">Pieteikties</a></li>
           </ul>
         </div>
 
         <div>
-          <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-paper/40">Kontakti</h3>
+          <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-ink/65">Kontakti</h3>
           <ul className="mt-4 space-y-2.5 text-sm">
             <li>
-              <a href={COMPANY.phoneHref} className="hover:text-paper">{COMPANY.phone}</a>
-              {COMPANY.phoneIsPlaceholder && <span className="ml-2 text-xs text-paper/35">(jāatjaunina)</span>}
+              <a href={COMPANY.phoneHref} className="hover:text-brand-600">{COMPANY.phone}</a>
+              {COMPANY.phoneIsPlaceholder && <span className="ml-2 text-xs text-ink/55">(jāatjaunina)</span>}
             </li>
             <li>
-              <a href={`mailto:${COMPANY.email}`} className="hover:text-paper">{COMPANY.email}</a>
+              <a href={`mailto:${COMPANY.email}`} className="hover:text-brand-600">{COMPANY.email}</a>
             </li>
-            <li className="text-paper/50">{COMPANY.serviceArea}</li>
+            <li className="text-ink/75">{COMPANY.serviceArea}</li>
             <li>
-              <Link to="/kontakti" className="hover:text-paper">Kontakti un rekvizīti →</Link>
+              <Link to="/kontakti" className="font-medium text-brand-600 hover:text-brand-700">Kontakti un rekvizīti →</Link>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="border-t border-paper/10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-6 text-xs text-paper/40 md:flex-row md:items-center md:justify-between">
+      <div className="border-t border-ink/10">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-6 text-xs text-ink/70 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Baterijastests.lv. Visas tiesības aizsargātas.</p>
           <div className="flex gap-5">
-            <Link to="/privatuma-politika" className="hover:text-paper/70">Privātuma politika</Link>
-            <Link to="/lietosanas-noteikumi" className="hover:text-paper/70">Lietošanas noteikumi</Link>
+            <Link to="/privatuma-politika" className="hover:text-ink">Privātuma politika</Link>
+            <Link to="/lietosanas-noteikumi" className="hover:text-ink">Lietošanas noteikumi</Link>
           </div>
         </div>
       </div>

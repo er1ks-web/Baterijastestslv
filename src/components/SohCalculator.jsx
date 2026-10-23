@@ -79,7 +79,7 @@ export default function SohCalculator() {
     <div className="overflow-hidden rounded-lg border border-ink/10 bg-white shadow-soft md:grid md:grid-cols-[1fr_1.05fr]">
       <div className="space-y-8 p-6 sm:p-8">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wide text-ink/45">1 · Izvēlieties modeli</p>
+          <p className="text-xs font-semibold uppercase tracking-wide text-ink/60">1 · Izvēlieties modeli</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {MODELS.map((m) => (
               <button
@@ -90,7 +90,7 @@ export default function SohCalculator() {
                 className={`rounded-md border px-3 py-1.5 text-sm transition ${
                   m.key === modelKey
                     ? 'border-ink bg-ink font-medium text-paper'
-                    : 'border-ink/15 text-ink/70 hover:border-ink/40'
+                    : 'border-ink/15 text-ink/80 hover:border-ink/40'
                 }`}
               >
                 {m.name}
@@ -101,7 +101,7 @@ export default function SohCalculator() {
 
         <div>
           <div className="flex items-end justify-between">
-            <label htmlFor="soh-range" className="text-xs font-semibold uppercase tracking-wide text-ink/45">
+            <label htmlFor="soh-range" className="text-xs font-semibold uppercase tracking-wide text-ink/60">
               2 · Akumulatora stāvoklis (SOH)
             </label>
             <span className="font-display text-3xl font-semibold leading-none text-ink">{soh}%</span>
@@ -116,7 +116,7 @@ export default function SohCalculator() {
             onChange={(e) => setSoh(Number(e.target.value))}
             className="mt-4 h-2 w-full cursor-pointer accent-brand-600"
           />
-          <div className="mt-1 flex justify-between text-xs text-ink/40">
+          <div className="mt-1 flex justify-between text-xs text-ink/55">
             {[60, 70, 80, 90, 100].map((t) => (
               <span key={t}>{t}%</span>
             ))}
@@ -124,11 +124,11 @@ export default function SohCalculator() {
         </div>
 
         <div>
-          <label htmlFor="car-price" className="text-xs font-semibold uppercase tracking-wide text-ink/45">
+          <label htmlFor="car-price" className="text-xs font-semibold uppercase tracking-wide text-ink/60">
             3 · Auto cena
           </label>
           <div className="mt-3 flex max-w-[12rem] items-center rounded-md border border-ink/15 focus-within:border-brand-500">
-            <span className="pl-3 text-ink/40">€</span>
+            <span className="pl-3 text-ink/55">€</span>
             <input
               id="car-price"
               type="number"
@@ -142,10 +142,10 @@ export default function SohCalculator() {
           </div>
         </div>
 
-        <div className="rounded-md border border-ink/10 bg-paper p-4">
+        <div className="rounded-md border border-ink/10 bg-canvas p-4">
           <span className={`inline-block rounded px-2 py-0.5 text-xs font-semibold ${band.badge}`}>{band.label}</span>
           <p className="mt-2 font-display font-semibold text-ink">{band.title}</p>
-          <p className="mt-1 text-sm leading-relaxed text-ink/60">{band.text}</p>
+          <p className="mt-1 text-sm leading-relaxed text-ink/75">{band.text}</p>
         </div>
       </div>
 

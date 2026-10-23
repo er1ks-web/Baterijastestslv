@@ -3,12 +3,12 @@ export default function Terms() {
     <section className="mx-auto max-w-3xl px-5 py-16">
       <span className="text-xs font-semibold uppercase tracking-wide text-brand-600">Juridiskā informācija</span>
       <h1 className="mt-3 text-3xl font-bold text-ink sm:text-4xl">Lietošanas noteikumi</h1>
-      <p className="mt-3 text-sm text-ink/45">
+      <p className="mt-3 text-sm text-ink/60">
         Šis ir vispārīgs paraugs. Pirms publicēšanas lūdzam pārskatīt tiesību speciālistam un pielāgot
         konkrētajam pakalpojumam.
       </p>
 
-      <div className="mt-8 space-y-6 text-sm text-ink/70">
+      <div className="mt-8 space-y-6 text-sm text-ink/80">
         <div>
           <h2 className="font-display text-lg font-semibold text-ink">1. Pakalpojuma apraksts</h2>
           <p className="mt-2">
