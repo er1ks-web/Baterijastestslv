@@ -29,10 +29,10 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 border-b backdrop-blur-xl backdrop-saturate-150 transition-all duration-300 ${
         open
-          ? 'border-ink/10 bg-canvas/95'
+          ? 'border-ink/10 bg-white/95'
           : scrolled
-            ? 'border-ink/10 bg-canvas/60 shadow-[0_10px_30px_-12px_rgba(0,0,0,0.7)]'
-            : 'border-transparent bg-canvas/50'
+            ? 'border-ink/10 bg-white/65 shadow-[0_8px_30px_-14px_rgba(22,36,29,0.3)]'
+            : 'border-transparent bg-white/75'
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-2">
@@ -55,7 +55,7 @@ export default function Header() {
         <div className="hidden lg:block">
           <Link
             to="/#pieteikties"
-            className="rounded-md bg-charge-200 px-5 py-2.5 text-sm font-semibold text-night transition hover:bg-charge-100"
+            className="rounded-md bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-700"
           >
             Pieteikties →
           </Link>
@@ -88,7 +88,7 @@ export default function Header() {
             <Link
               to="/#pieteikties"
               onClick={close}
-              className="mt-2 rounded-md bg-charge-200 px-5 py-2.5 text-center text-sm font-semibold text-night"
+              className="mt-2 rounded-md bg-brand-600 px-5 py-2.5 text-center text-sm font-semibold text-white"
             >
               Pieteikties →
             </Link>

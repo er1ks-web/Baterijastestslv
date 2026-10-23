@@ -14,9 +14,9 @@ export default function Hero() {
       <div className="mx-auto max-w-6xl px-5 pb-14 pt-16 md:pb-20 md:pt-24">
         <div className="grid gap-14 md:grid-cols-[1.1fr_0.9fr] md:items-end">
           <div>
-            <p className="font-display text-sm italic text-charge-200">Neatkarīgs akumulatora tests</p>
+            <p className="font-display text-sm italic text-brand-600">Neatkarīgs akumulatora tests</p>
             <h1 className="mt-4 text-[2.6rem] font-semibold leading-[1.05] text-ink sm:text-6xl">
-              Baterija nolietojas klusi. <span className="text-charge-200">Skaitlis to pasaka skaļi.</span>
+              Baterija nolietojas klusi. <span className="text-brand-600">Skaitlis to pasaka skaļi.</span>
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink/75">
               20–30 minūšu diagnostikā uzzināsiet elektroauto akumulatora reālo stāvokli (SOH) un
@@ -25,7 +25,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
                 href="#pieteikties"
-                className="rounded-md bg-charge-200 px-7 py-3.5 text-sm font-semibold text-night transition hover:bg-charge-100"
+                className="rounded-md bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-700"
               >
                 Pieteikt pārbaudi
               </a>
@@ -48,7 +48,7 @@ export default function Hero() {
                   <div key={b.year} className="flex h-full flex-1 flex-col items-center justify-end gap-2">
                     <div
                       className={`w-full rounded-sm ${
-                        b.pct === '?' ? 'border-2 border-dashed border-brand-300 bg-transparent' : 'bg-brand-400'
+                        b.pct === '?' ? 'border-2 border-dashed border-brand-400 bg-transparent' : 'bg-brand-300'
                       }`}
                       style={{ height: b.pct === '?' ? '60%' : `${b.pct}%` }}
                     />

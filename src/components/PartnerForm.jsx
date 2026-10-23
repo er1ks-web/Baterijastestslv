@@ -30,7 +30,7 @@ export default function PartnerForm() {
   if (submitted) {
     return (
       <div className="rounded-lg border border-brand-500/30 bg-surface p-8 text-center sm:p-10">
-        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-charge-200 text-night">
+        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brand-600 text-white">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="M5 13l4 4L19 7" />
           </svg>
@@ -93,7 +93,7 @@ export default function PartnerForm() {
         </label>
       </div>
 
-      {error && <p className="mt-4 text-sm font-medium text-red-400">{error}</p>}
+      {error && <p className="mt-4 text-sm font-medium text-red-600">{error}</p>}
 
       <p className="mt-5 text-xs leading-relaxed text-ink/60">
         Nosūtot formu, jūs piekrītat, ka izmantosim šos datus, lai sagatavotu piedāvājumu. Vairāk mūsu{' '}
@@ -105,7 +105,7 @@ export default function PartnerForm() {
 
       <button
         type="submit"
-        className="mt-6 w-full rounded-md bg-charge-200 px-6 py-3.5 text-sm font-semibold text-night transition hover:bg-charge-100 sm:w-auto"
+        className="mt-6 w-full rounded-md bg-brand-600 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-700 sm:w-auto"
       >
         Saņemt piedāvājumu
       </button>

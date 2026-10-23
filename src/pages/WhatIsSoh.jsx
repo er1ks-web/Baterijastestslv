@@ -5,7 +5,7 @@ import FinalCta from '../components/FinalCta.jsx'
 
 const SCALE = [
   { range: '90–100%', label: 'Lieliski', text: 'Praktiski kā jauns akumulators.', bar: 'bg-brand-500' },
-  { range: '80–89%', label: 'Labi', text: 'Normāls nolietojums, nobraukums nedaudz samazinājies.', bar: 'bg-lime-500' },
+  { range: '80–89%', label: 'Labi', text: 'Normāls nolietojums, nobraukums nedaudz samazinājies.', bar: 'bg-lime-600' },
   { range: '70–79%', label: 'Vidēji', text: 'Zudums jūtams, īpaši ziemā — svarīgi zināt pirms pirkuma.', bar: 'bg-amber-500' },
   { range: 'zem 70%', label: 'Zems', text: 'Ievērojams nolietojums, iespējama nomaiņa nākotnē.', bar: 'bg-red-600' },
 ]
@@ -56,9 +56,9 @@ export default function WhatIsSoh() {
       <section className="border-b border-ink/10 bg-canvas">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 pb-14 pt-16 md:grid-cols-[1.15fr_0.85fr] md:items-center md:pb-20 md:pt-24">
           <div>
-            <p className="font-display text-sm italic text-charge-200">Kas ir SOH</p>
+            <p className="font-display text-sm italic text-brand-600">Kas ir SOH</p>
             <h1 className="mt-4 text-4xl font-semibold leading-[1.08] text-ink sm:text-5xl">
-              SOH ir akumulatora <span className="text-charge-200">veselība procentos</span>
+              SOH ir akumulatora <span className="text-brand-600">veselība procentos</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/75">
               SOH (State of Health) parāda, cik daudz no sākotnējās kapacitātes akumulators vēl ir saglabājis.
@@ -75,13 +75,13 @@ export default function WhatIsSoh() {
 
           <div className="space-y-4">
             <div className="rounded-lg border border-ink/10 bg-surface p-5 shadow-soft">
-              <p className="text-xs font-semibold uppercase tracking-wide text-charge-200">SOC — uzlādes līmenis</p>
+              <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">SOC — uzlādes līmenis</p>
               <p className="mt-2 text-sm leading-relaxed text-ink/75">
                 Rāda, cik pilna ir &ldquo;tvertne&rdquo; tieši tagad. Mainās katru dienu.
               </p>
             </div>
             <div className="rounded-lg bg-night p-5 text-paper shadow-soft">
-              <p className="text-xs font-semibold uppercase tracking-wide text-charge-200">SOH — veselības stāvoklis</p>
+              <p className="text-xs font-semibold uppercase tracking-wide text-brand-300">SOH — veselības stāvoklis</p>
               <p className="mt-2 text-sm leading-relaxed text-paper/65">
                 Rāda, cik liela tā &ldquo;tvertne&rdquo; vēl ir salīdzinājumā ar jaunu. Mainās lēni — un atpakaļ
                 neatgriežas.
@@ -93,7 +93,7 @@ export default function WhatIsSoh() {
 
       <section id="kalkulators" className="mx-auto max-w-6xl scroll-mt-28 px-5 py-16 md:py-24">
         <div className="max-w-2xl">
-          <p className="font-display text-sm italic text-charge-200">Izmēģiniet paši</p>
+          <p className="font-display text-sm italic text-brand-600">Izmēģiniet paši</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Ko SOH nozīmē tieši jūsu auto</h2>
           <p className="mt-4 text-ink/75">
             Izvēlieties modeli, pavelciet slīdni un redziet, kā procenti pārvēršas kilometros un eiro.
@@ -107,7 +107,7 @@ export default function WhatIsSoh() {
       <section className="border-y border-ink/10 bg-surface">
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
           <div className="max-w-2xl">
-            <p className="font-display text-sm italic text-charge-200">Rezultāta nozīme</p>
+            <p className="font-display text-sm italic text-brand-600">Rezultāta nozīme</p>
             <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Kā lasīt SOH</h2>
           </div>
           <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4">
@@ -122,7 +122,7 @@ export default function WhatIsSoh() {
           </div>
 
           <div className="mt-8 rounded-lg border border-brand-500/30 bg-brand-500/10 p-6 sm:p-8">
-            <p className="font-display text-sm italic text-charge-200">Euro 7 un garantija</p>
+            <p className="font-display text-sm italic text-brand-600">Euro 7 un garantija</p>
             <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink/80">
               Jauniem automobiļiem ES Euro 7 regula (Regula (ES) 2024/1257) paredz minimālu akumulatora izturību:
               vismaz 80% kapacitātes pēc 5 gadiem vai 100 000 km un vismaz 72% pēc 8 gadiem vai 160 000 km. Šīs
@@ -135,7 +135,7 @@ export default function WhatIsSoh() {
 
       <section className="mx-auto max-w-6xl px-5 py-16 md:py-24">
         <div className="max-w-2xl">
-          <p className="font-display text-sm italic text-charge-200">Kā to uzzināt</p>
+          <p className="font-display text-sm italic text-brand-600">Kā to uzzināt</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Trīs veidi, kā novērtēt akumulatoru</h2>
           <p className="mt-4 text-ink/75">
             Ne katrs rādījums ir SOH. Lūk, ko katra metode patiesībā parāda.
@@ -168,7 +168,7 @@ export default function WhatIsSoh() {
         </div>
         <p className="mt-4 text-sm text-ink/70">
           Gribat redzēt, kā notiek pārbaude?{' '}
-          <Link to="/#process" className="font-medium text-charge-200 underline underline-offset-2">
+          <Link to="/#process" className="font-medium text-brand-600 underline underline-offset-2">
             Skatiet procesu
           </Link>
           .
@@ -178,7 +178,7 @@ export default function WhatIsSoh() {
       <section className="bg-night text-paper">
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
           <div className="max-w-2xl">
-            <p className="font-display text-sm italic text-charge-200">Kāpēc akumulators nolietojas</p>
+            <p className="font-display text-sm italic text-brand-300">Kāpēc akumulators nolietojas</p>
             <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Kas samazina SOH</h2>
             <p className="mt-4 text-paper/55">
               Tāpēc divi vienāda vecuma elektroauto var būt pavisam dažādā stāvoklī.
@@ -187,7 +187,7 @@ export default function WhatIsSoh() {
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {FACTORS.map((f, i) => (
               <div key={f.title} className="border-t border-paper/15 pt-5">
-                <span className="font-display text-xs text-charge-200">{String(i + 1).padStart(2, '0')}</span>
+                <span className="font-display text-xs text-brand-300">{String(i + 1).padStart(2, '0')}</span>
                 <h3 className="mt-2 font-display text-lg font-semibold">{f.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-paper/55">{f.text}</p>
               </div>

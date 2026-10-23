@@ -19,15 +19,15 @@ const BANDS = [
     min: 90,
     label: 'Lieliski',
     bar: 'bg-brand-500',
-    badge: 'bg-brand-500/20 text-charge-200',
+    badge: 'bg-brand-500/20 text-brand-600',
     title: 'Gandrīz kā jauns akumulators',
     text: 'Kapacitātes zudums ir niecīgs. Pārbaude šādam auto parasti apstiprina pārdevēja teikto.',
   },
   {
     min: 80,
     label: 'Labi',
-    bar: 'bg-lime-500',
-    badge: 'bg-lime-500/20 text-lime-300',
+    bar: 'bg-lime-600',
+    badge: 'bg-lime-100 text-lime-800',
     title: 'Normāls nolietojums 3–6 gadus vecam auto',
     text: 'Atšķirība starp 81% un 89% var nozīmēt simtiem līdz tūkstošiem eiro — vērts zināt precīzu skaitli.',
   },
@@ -35,7 +35,7 @@ const BANDS = [
     min: 70,
     label: 'Vidēji',
     bar: 'bg-amber-500',
-    badge: 'bg-amber-500/20 text-amber-300',
+    badge: 'bg-amber-100 text-amber-800',
     title: 'Zudums jau jūtams ikdienā',
     text: 'Īpaši ziemā. Tas ir pamats sarunām par cenu — un laiks pārbaudīt garantijas nosacījumus.',
   },
@@ -43,7 +43,7 @@ const BANDS = [
     min: 0,
     label: 'Zems',
     bar: 'bg-red-600',
-    badge: 'bg-red-500/20 text-red-300',
+    badge: 'bg-red-100 text-red-700',
     title: 'Ievērojams nolietojums',
     text: 'Jārēķinās ar ierobežotu nobraukumu un iespējamu akumulatora nomaiņu nākotnē.',
   },
@@ -89,7 +89,7 @@ export default function SohCalculator() {
                 onClick={() => setModelKey(m.key)}
                 className={`rounded-md border px-3 py-1.5 text-sm transition ${
                   m.key === modelKey
-                    ? 'border-charge-200 bg-charge-200 font-medium text-night'
+                    ? 'border-brand-600 bg-brand-600 font-medium text-white'
                     : 'border-ink/15 text-ink/80 hover:border-ink/40'
                 }`}
               >
@@ -114,7 +114,7 @@ export default function SohCalculator() {
             step="1"
             value={soh}
             onChange={(e) => setSoh(Number(e.target.value))}
-            className="mt-4 h-2 w-full cursor-pointer accent-charge-300"
+            className="mt-4 h-2 w-full cursor-pointer accent-brand-600"
           />
           <div className="mt-1 flex justify-between text-xs text-ink/55">
             {[60, 70, 80, 90, 100].map((t) => (
@@ -195,7 +195,7 @@ export default function SohCalculator() {
 
         <div className="mt-6 rounded-md bg-paper/[0.06] p-4">
           <p className="text-xs text-paper/45">Aptuvenais vērtības samazinājums</p>
-          <p className="mt-1 font-display text-3xl font-semibold text-charge-200">
+          <p className="mt-1 font-display text-3xl font-semibold text-brand-300">
             {priceNum > 0 ? `≈ €${fmt(priceLoss)}` : '—'}
           </p>
           <p className="mt-1 text-xs leading-relaxed text-paper/40">
@@ -206,7 +206,7 @@ export default function SohCalculator() {
 
         <Link
           to="/#pieteikties"
-          className="mt-6 inline-block rounded-md bg-charge-200 px-6 py-3 text-sm font-semibold text-night transition hover:bg-charge-100"
+          className="mt-6 inline-block rounded-md bg-paper px-6 py-3 text-sm font-semibold text-night transition hover:bg-white"
         >
           Uzzināt sava auto reālo SOH
         </Link>

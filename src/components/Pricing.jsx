@@ -13,7 +13,7 @@ export default function Pricing() {
     <section id="cenas" className="scroll-mt-28 bg-night text-paper">
       <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
         <div className="max-w-2xl">
-          <p className="font-display text-sm italic text-charge-200">Cena</p>
+          <p className="font-display text-sm italic text-brand-300">Cena</p>
           <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Viena pārbaude, skaidra cena</h2>
           <p className="mt-4 text-paper/55">Bez slēptām izmaksām un bez papildu pakešu izvēles.</p>
         </div>
@@ -25,7 +25,7 @@ export default function Pricing() {
             <p className="mt-2 text-sm text-paper/50">Ilgums: 20–30 min</p>
             <Link
               to="/#pieteikties"
-              className="mt-6 inline-block rounded-md bg-charge-200 px-6 py-3 text-sm font-semibold text-night transition hover:bg-charge-100"
+              className="mt-6 inline-block rounded-md bg-paper px-6 py-3 text-sm font-semibold text-night transition hover:bg-white"
             >
               Pieteikt pārbaudi
             </Link>
@@ -34,7 +34,7 @@ export default function Pricing() {
           <ul className="grid content-start gap-x-8 gap-y-4 sm:grid-cols-2">
             {FEATURES.map((f) => (
               <li key={f} className="flex items-start gap-3 border-b border-paper/10 pb-4 text-sm text-paper/75">
-                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-paper/10 text-charge-200">
+                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-paper/10 text-brand-300">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                     <path d="M5 13l4 4L19 7" />
                   </svg>

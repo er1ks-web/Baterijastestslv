@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Dark theme: `ink` is the LIGHT foreground (text, borders, tracks).
-        ink: '#e8f0ea',
+        // Calm light theme. `night` is a muted forest green used for the few dark bands.
+        ink: '#16241d',
         paper: '#f4f8f4',
-        canvas: '#0a110e',
-        night: '#050908',
-        surface: '#111b16',
+        canvas: '#f6f7f3',
+        night: '#16352b',
+        surface: '#ffffff',
         brand: {
           50: '#effaf0',
           100: '#d7f3da',
@@ -37,7 +37,7 @@ export default {
         display: ['"Outfit"', '"Inter"', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        soft: '0 18px 40px -18px rgba(0, 0, 0, 0.75)',
+        soft: '0 16px 36px -20px rgba(22, 36, 29, 0.22)',
       },
     },
   },

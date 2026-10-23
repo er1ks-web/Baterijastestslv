@@ -12,7 +12,7 @@ export default function WhatYouGet() {
     <section id="atskaite" className="scroll-mt-28 border-y border-ink/10 bg-surface">
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 py-16 md:grid-cols-2 md:py-24">
         <div>
-          <p className="font-display text-sm italic text-charge-200">Rezultāts</p>
+          <p className="font-display text-sm italic text-brand-600">Rezultāts</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Ko jūs saņemat</h2>
           <p className="mt-4 max-w-md text-ink/75">
             Ne tikai vienu skaitli — bet skaidru dokumentu, ko var uzrādīt pircējam, pārdevējam vai
@@ -36,7 +36,7 @@ export default function WhatYouGet() {
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-paper/40">Atskaites paraugs</p>
                 <p className="mt-1 font-display text-lg font-semibold">Nissan Leaf 40</p>
               </div>
-              <span className="font-display text-3xl font-semibold text-charge-200">91%</span>
+              <span className="font-display text-3xl font-semibold text-brand-300">91%</span>
             </div>
 
             <div className="relative h-0 border-t-2 border-dashed border-paper/20">

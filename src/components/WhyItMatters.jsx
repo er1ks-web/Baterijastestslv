@@ -3,8 +3,8 @@ export default function WhyItMatters() {
     <section className="bg-night text-paper">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:grid-cols-[0.8fr_1.2fr] md:py-24">
         <div>
-          <p className="font-display text-sm italic text-charge-200">Kāpēc tas maksā tik daudz</p>
-          <p className="mt-5 font-display text-6xl font-semibold leading-none text-charge-200 sm:text-7xl">
+          <p className="font-display text-sm italic text-brand-300">Kāpēc tas maksā tik daudz</p>
+          <p className="mt-5 font-display text-6xl font-semibold leading-none text-brand-300 sm:text-7xl">
             ~€1000+
           </p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-paper/50">

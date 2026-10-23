@@ -1,7 +1,7 @@
 export default function Privacy() {
   return (
     <section className="mx-auto max-w-3xl px-5 py-16">
-      <span className="text-xs font-semibold uppercase tracking-wide text-charge-200">Juridiskā informācija</span>
+      <span className="text-xs font-semibold uppercase tracking-wide text-brand-600">Juridiskā informācija</span>
       <h1 className="mt-3 text-3xl font-bold text-ink sm:text-4xl">Privātuma politika</h1>
       <p className="mt-3 text-sm text-ink/60">
         Šis ir vispārīgs paraugs. Pirms publicēšanas lūdzam pārskatīt tiesību speciālistam un aizpildīt

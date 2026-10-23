@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -18,10 +18,10 @@ h1, h2, h3, h4 {
 
 input::placeholder,
 textarea::placeholder {
-  color: rgb(232 240 234 / 0.38);
+  color: rgb(22 36 29 / 0.38);
 }
 
 ::selection {
-  background: #5dd910;
-  color: #050908;
+  background: #aee6b4;
+  color: #16241d;
 }

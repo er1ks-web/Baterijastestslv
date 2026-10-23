@@ -21,7 +21,7 @@ export default function WhoItsFor() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-16 md:py-24">
       <div className="max-w-xl">
-        <p className="font-display text-sm italic text-charge-200">Kam tas noder</p>
+        <p className="font-display text-sm italic text-brand-600">Kam tas noder</p>
         <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Atkarībā no jūsu situācijas</h2>
       </div>
 
