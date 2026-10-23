@@ -48,7 +48,7 @@ export default function Hero() {
                   <div key={b.year} className="flex h-full flex-1 flex-col items-center justify-end gap-2">
                     <div
                       className={`w-full rounded-sm ${
-                        b.pct === '?' ? 'border-2 border-dashed border-brand-300 bg-transparent' : 'bg-brand-500'
+                        b.pct === '?' ? 'border-2 border-dashed border-brand-300 bg-transparent' : 'bg-brand-400'
                       }`}
                       style={{ height: b.pct === '?' ? '60%' : `${b.pct}%` }}
                     />

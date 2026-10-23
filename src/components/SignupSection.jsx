@@ -2,7 +2,7 @@ import SignupForm from './SignupForm.jsx'
 
 export default function SignupSection() {
   return (
-    <section id="pieteikties" className="scroll-mt-20 bg-canvas">
+    <section id="pieteikties" className="scroll-mt-28 bg-canvas">
       <div className="mx-auto grid max-w-6xl items-start gap-12 px-5 py-16 md:grid-cols-[0.9fr_1.1fr] md:py-24">
         <div>
           <p className="font-display text-sm italic text-charge-200">Pieteikšanās</p>

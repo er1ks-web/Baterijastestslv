@@ -29,23 +29,23 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 border-b backdrop-blur-xl backdrop-saturate-150 transition-all duration-300 ${
         open
-          ? 'border-ink/10 bg-surface/95'
+          ? 'border-ink/10 bg-canvas/95'
           : scrolled
-            ? 'border-ink/10 bg-surface/65 shadow-[0_10px_30px_-12px_rgba(0,0,0,0.7)]'
-            : 'border-ink/10 bg-surface/55'
+            ? 'border-ink/10 bg-canvas/60 shadow-[0_10px_30px_-12px_rgba(0,0,0,0.7)]'
+            : 'border-transparent bg-canvas/50'
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-2">
         <Link to="/" aria-label="Baterijastests.lv — sākums">
-          <Logo variant="wordmark" className="h-8 xl:h-9" />
+          <Logo className="h-16 md:h-20" />
         </Link>
 
-        <nav className="hidden items-center gap-5 lg:flex xl:gap-7">
+        <nav className="hidden items-center gap-7 lg:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className="whitespace-nowrap text-sm font-medium text-ink/75 transition-colors hover:text-ink"
+              className="text-sm font-medium text-ink/75 transition-colors hover:text-ink"
             >
               {link.label}
             </Link>
@@ -55,7 +55,7 @@ export default function Header() {
         <div className="hidden lg:block">
           <Link
             to="/#pieteikties"
-            className="whitespace-nowrap rounded-md bg-charge-200 px-5 py-2.5 text-sm font-semibold text-night transition hover:bg-charge-100"
+            className="rounded-md bg-charge-200 px-5 py-2.5 text-sm font-semibold text-night transition hover:bg-charge-100"
           >
             Pieteikties →
           </Link>

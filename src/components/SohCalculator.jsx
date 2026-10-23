@@ -18,15 +18,15 @@ const BANDS = [
   {
     min: 90,
     label: 'Lieliski',
-    bar: 'bg-emerald-500',
-    badge: 'bg-emerald-500/20 text-emerald-300',
+    bar: 'bg-brand-500',
+    badge: 'bg-brand-500/20 text-charge-200',
     title: 'Gandrīz kā jauns akumulators',
     text: 'Kapacitātes zudums ir niecīgs. Pārbaude šādam auto parasti apstiprina pārdevēja teikto.',
   },
   {
     min: 80,
     label: 'Labi',
-    bar: 'bg-lime-600',
+    bar: 'bg-lime-500',
     badge: 'bg-lime-500/20 text-lime-300',
     title: 'Normāls nolietojums 3–6 gadus vecam auto',
     text: 'Atšķirība starp 81% un 89% var nozīmēt simtiem līdz tūkstošiem eiro — vērts zināt precīzu skaitli.',

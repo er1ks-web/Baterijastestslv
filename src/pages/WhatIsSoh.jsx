@@ -4,8 +4,8 @@ import SohCalculator from '../components/SohCalculator.jsx'
 import FinalCta from '../components/FinalCta.jsx'
 
 const SCALE = [
-  { range: '90–100%', label: 'Lieliski', text: 'Praktiski kā jauns akumulators.', bar: 'bg-emerald-500' },
-  { range: '80–89%', label: 'Labi', text: 'Normāls nolietojums, nobraukums nedaudz samazinājies.', bar: 'bg-lime-600' },
+  { range: '90–100%', label: 'Lieliski', text: 'Praktiski kā jauns akumulators.', bar: 'bg-brand-500' },
+  { range: '80–89%', label: 'Labi', text: 'Normāls nolietojums, nobraukums nedaudz samazinājies.', bar: 'bg-lime-500' },
   { range: '70–79%', label: 'Vidēji', text: 'Zudums jūtams, īpaši ziemā — svarīgi zināt pirms pirkuma.', bar: 'bg-amber-500' },
   { range: 'zem 70%', label: 'Zems', text: 'Ievērojams nolietojums, iespējama nomaiņa nākotnē.', bar: 'bg-red-600' },
 ]
@@ -91,7 +91,7 @@ export default function WhatIsSoh() {
         </div>
       </section>
 
-      <section id="kalkulators" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-16 md:py-24">
+      <section id="kalkulators" className="mx-auto max-w-6xl scroll-mt-28 px-5 py-16 md:py-24">
         <div className="max-w-2xl">
           <p className="font-display text-sm italic text-charge-200">Izmēģiniet paši</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Ko SOH nozīmē tieši jūsu auto</h2>
