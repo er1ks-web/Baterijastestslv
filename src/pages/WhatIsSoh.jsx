@@ -4,8 +4,8 @@ import SohCalculator from '../components/SohCalculator.jsx'
 import FinalCta from '../components/FinalCta.jsx'
 
 const SCALE = [
-  { range: '90–100%', label: 'Lieliski', text: 'Praktiski kā jauns akumulators.', bar: 'bg-brand-500' },
-  { range: '80–89%', label: 'Labi', text: 'Normāls nolietojums, nobraukums nedaudz samazinājies.', bar: 'bg-lime-500' },
+  { range: '90–100%', label: 'Lieliski', text: 'Praktiski kā jauns akumulators.', bar: 'bg-emerald-500' },
+  { range: '80–89%', label: 'Labi', text: 'Normāls nolietojums, nobraukums nedaudz samazinājies.', bar: 'bg-lime-600' },
   { range: '70–79%', label: 'Vidēji', text: 'Zudums jūtams, īpaši ziemā — svarīgi zināt pirms pirkuma.', bar: 'bg-amber-500' },
   { range: 'zem 70%', label: 'Zems', text: 'Ievērojams nolietojums, iespējama nomaiņa nākotnē.', bar: 'bg-red-600' },
 ]

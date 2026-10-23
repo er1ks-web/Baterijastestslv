@@ -3,9 +3,9 @@ import Faq from '../components/Faq.jsx'
 import PartnerForm from '../components/PartnerForm.jsx'
 
 const FLEET = [
-  { model: 'Nissan Leaf 40', soh: 91, bar: 'bg-brand-500' },
-  { model: 'VW ID.4 Pro', soh: 87, bar: 'bg-lime-500' },
-  { model: 'Tesla Model 3 LR', soh: 83, bar: 'bg-lime-500' },
+  { model: 'Nissan Leaf 40', soh: 91, bar: 'bg-emerald-500' },
+  { model: 'VW ID.4 Pro', soh: 87, bar: 'bg-lime-600' },
+  { model: 'Tesla Model 3 LR', soh: 83, bar: 'bg-lime-600' },
   { model: 'Renault Zoe 52', soh: 76, bar: 'bg-amber-500' },
 ]
 
