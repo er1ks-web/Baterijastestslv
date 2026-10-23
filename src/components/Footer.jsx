@@ -18,6 +18,7 @@ export default function Footer() {
         <div>
           <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-paper/40">Lapa</h3>
           <ul className="mt-4 space-y-2.5 text-sm">
+            <li><Link to="/kas-ir-soh" className="hover:text-paper">Kas ir SOH</Link></li>
             <li><a href="/#process" className="hover:text-paper">Process</a></li>
             <li><a href="/#cenas" className="hover:text-paper">Cenas</a></li>
             <li><a href="/#buj" className="hover:text-paper">Jautājumi</a></li>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function FinalCta() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-16 md:py-24">
@@ -9,12 +11,12 @@ export default function FinalCta() {
         <p className="max-w-md text-paper/55">
           Godīgs, neatkarīgs rezultāts 20–30 minūtēs — ar atskaiti, kam var uzticēties.
         </p>
-        <a
-          href="#pieteikties"
+        <Link
+          to="/#pieteikties"
           className="rounded-md bg-charge-200 px-8 py-3.5 text-sm font-semibold text-ink transition hover:bg-charge-100"
         >
           Pieteikt pārbaudi
-        </a>
+        </Link>
       </div>
     </section>
   )
