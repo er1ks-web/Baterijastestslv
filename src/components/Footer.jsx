@@ -37,7 +37,7 @@ export default function Footer() {
             <li>
               <a href="mailto:info@baterijastests.lv" className="hover:text-paper">info@baterijastests.lv</a>
             </li>
-            <li className="text-paper/50">Rīga un visa Latvija</li>
+            <li className="text-paper/50">Rīga un Rīgas reģions</li>
           </ul>
         </div>
       </div>

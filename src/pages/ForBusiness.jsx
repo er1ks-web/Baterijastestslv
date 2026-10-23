@@ -65,7 +65,7 @@ const FAQS = [
   },
   {
     q: 'Vai atbraucat pie mums?',
-    a: 'Jā, brauksim uz jūsu stāvvietu, salonu vai noliktavu Rīgā un citur Latvijā.',
+    a: 'Jā, brauksim uz jūsu stāvvietu, salonu vai noliktavu Rīgā un Rīgas reģionā.',
   },
   {
     q: 'Vai atskaiti var pievienot sludinājumam vai līgumam?',

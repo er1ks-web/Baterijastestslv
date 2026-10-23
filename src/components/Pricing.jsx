@@ -1,77 +1,38 @@
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-const PLANS = [
-  {
-    key: 'standard',
-    name: 'Standarta tests',
-    price: '85',
-    duration: '20–30 min',
-    features: [
-      'OBD diagnostika uz vietas',
-      'SOH atskaite (PDF)',
-      'Kapacitāte un uzlādes cikli',
-      'BMS kļūdu pārbaude',
-    ],
-  },
-  {
-    key: 'premium',
-    name: 'Padziļinātais audits',
-    price: '125',
-    duration: '2–4 h',
-    features: [
-      'Viss no Standarta testa',
-      'Detalizētāka datu analīze',
-      'Reālā nobraukuma prognoze',
-      'Pilns rakstisks slēdziens',
-    ],
-  },
+const FEATURES = [
+  'OBD diagnostika uz vietas',
+  'SOH atskaite (PDF)',
+  'Kapacitāte un uzlādes cikli',
+  'BMS kļūdu pārbaude',
+  'Izbraukums uz jūsu norādīto vietu Rīgas reģionā',
 ]
 
 export default function Pricing() {
-  const [active, setActive] = useState('standard')
-  const plan = PLANS.find((p) => p.key === active)
-
   return (
     <section id="cenas" className="scroll-mt-28 bg-ink text-paper">
       <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <div>
-            <p className="font-display text-sm italic text-charge-200">Cenas</p>
-            <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Bez slēptām izmaksām</h2>
-          </div>
-
-          <div className="flex rounded-md border border-paper/15 p-1">
-            {PLANS.map((p) => (
-              <button
-                key={p.key}
-                onClick={() => setActive(p.key)}
-                className={`rounded px-4 py-2 text-sm font-medium transition ${
-                  active === p.key ? 'bg-paper text-ink' : 'text-paper/60 hover:text-paper'
-                }`}
-              >
-                {p.name}
-              </button>
-            ))}
-          </div>
+        <div className="max-w-2xl">
+          <p className="font-display text-sm italic text-charge-200">Cena</p>
+          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Viena pārbaude, skaidra cena</h2>
+          <p className="mt-4 text-paper/55">Bez slēptām izmaksām un bez papildu pakešu izvēles.</p>
         </div>
 
         <div className="mt-10 grid gap-10 border-t border-paper/10 pt-10 md:grid-cols-[0.6fr_1.4fr]">
           <div>
-            <div className="flex items-baseline gap-2">
-              <span className="text-sm text-paper/50">no</span>
-              <span className="font-display text-6xl font-semibold">€{plan.price}</span>
-            </div>
-            <p className="mt-2 text-sm text-paper/50">Ilgums: {plan.duration}</p>
-            <a
-              href="#pieteikties"
+            <p className="text-sm text-paper/50">EV akumulatora SOH tests</p>
+            <p className="mt-2 font-display text-6xl font-semibold">€90</p>
+            <p className="mt-2 text-sm text-paper/50">Ilgums: 20–30 min</p>
+            <Link
+              to="/#pieteikties"
               className="mt-6 inline-block rounded-md bg-charge-200 px-6 py-3 text-sm font-semibold text-ink transition hover:bg-charge-100"
             >
-              Pieteikt šo pakalpojumu
-            </a>
+              Pieteikt pārbaudi
+            </Link>
           </div>
 
-          <ul className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
-            {plan.features.map((f) => (
+          <ul className="grid content-start gap-x-8 gap-y-4 sm:grid-cols-2">
+            {FEATURES.map((f) => (
               <li key={f} className="flex items-start gap-3 border-b border-paper/10 pb-4 text-sm text-paper/75">
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-paper/10 text-charge-200">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
@@ -83,7 +44,6 @@ export default function Pricing() {
             ))}
           </ul>
         </div>
-        <p className="mt-8 text-xs text-paper/35">* Cenas ir orientējošas — jāapstiprina pirms publicēšanas.</p>
       </div>
     </section>
   )

@@ -8,18 +8,18 @@ export default function SignupSection() {
           <p className="font-display text-sm italic text-brand-500">Pieteikšanās</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">Rezervējiet savu pārbaudi</h2>
           <p className="mt-4 max-w-md text-ink/60">
-            Aizpildiet formu, un sazināsimies, lai vienotos par pārbaudes laiku un vietu. Precīzu cenu
-            apstiprināsim, ņemot vērā jūsu auto modeli un atrašanās vietu.
+            Norādiet vēlamo laiku un vietu, un mēs atbrauksim pie jums. Pēc pieteikuma sazināsimies, lai
+            precizētu detaļas.
           </p>
           <ul className="mt-7 space-y-3 border-t border-dashed border-ink/15 pt-6 text-sm text-ink/65">
             <li className="flex items-center gap-2.5">
-              <span className="font-display text-xs text-brand-400">01</span> Atbilde 1 darba dienas laikā
+              <span className="font-display text-xs text-brand-400">01</span> Izbraucam pie jums Rīgas reģionā
             </li>
             <li className="flex items-center gap-2.5">
-              <span className="font-display text-xs text-brand-400">02</span> Bez saistībām, kamēr laiks nav apstiprināts
+              <span className="font-display text-xs text-brand-400">02</span> Laiku un vietu norādāt pieteikumā
             </li>
             <li className="flex items-center gap-2.5">
-              <span className="font-display text-xs text-brand-400">03</span> Iespējama izbraukšana pie jums
+              <span className="font-display text-xs text-brand-400">03</span> Mēs sazināmies un precizējam detaļas
             </li>
           </ul>
         </div>

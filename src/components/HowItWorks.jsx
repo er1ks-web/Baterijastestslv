@@ -2,7 +2,7 @@ const STEPS = [
   {
     n: '01',
     title: 'Pieteikšanās',
-    text: 'Aizpildiet formu vai zvaniet — vienosimies par ērtu laiku un vietu Rīgā vai Latvijā.',
+    text: 'Aizpildiet formu, norādot vēlamo laiku un vietu Rīgas reģionā — mēs sazināsimies un precizēsim detaļas.',
   },
   {
     n: '02',

@@ -1,13 +1,19 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const initialForm = {
   name: '',
   phone: '',
   email: '',
   model: '',
-  city: '',
+  date: '',
+  time: '',
+  place: '',
   message: '',
 }
+
+const inputClass =
+  'rounded-md border border-ink/15 bg-white px-3.5 py-2.5 text-ink outline-none focus:border-brand-500'
 
 // NOTE: this form does not send data anywhere yet. Wire it up to a real
 // endpoint (e.g. Formspree, EmailJS, or a custom API route) before launch.
@@ -16,14 +22,16 @@ export default function SignupForm() {
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState('')
 
+  const today = new Date().toLocaleDateString('sv-SE')
+
   const onChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
   const onSubmit = (e) => {
     e.preventDefault()
-    if (!form.name || !form.phone || !form.email) {
-      setError('Lūdzu, aizpildiet vārdu, tālruni un e-pastu.')
+    if (!form.name || !form.phone || !form.email || !form.date || !form.time || !form.place.trim()) {
+      setError('Lūdzu, aizpildiet vārdu, tālruni, e-pastu, vēlamo datumu, laiku un vietu.')
       return
     }
     setError('')
@@ -40,7 +48,7 @@ export default function SignupForm() {
         </div>
         <h3 className="mt-4 font-display text-xl font-semibold text-ink">Pieteikums saņemts</h3>
         <p className="mt-2 text-sm text-ink/60">
-          Paldies, {form.name}! Sazināsimies ar jums pa tālruni vai e-pastu, lai vienotos par laiku.
+          Paldies, {form.name}! Sazināsimies ar jums, lai precizētu laiku, vietu un citas detaļas.
         </p>
       </div>
     )
@@ -51,23 +59,11 @@ export default function SignupForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="flex flex-col gap-1.5 text-sm">
           <span className="font-medium text-ink">Vārds, uzvārds *</span>
-          <input
-            name="name"
-            value={form.name}
-            onChange={onChange}
-            className="rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
-            placeholder="Jānis Bērziņš"
-          />
+          <input name="name" value={form.name} onChange={onChange} className={inputClass} placeholder="Jānis Bērziņš" />
         </label>
         <label className="flex flex-col gap-1.5 text-sm">
           <span className="font-medium text-ink">Tālrunis *</span>
-          <input
-            name="phone"
-            value={form.phone}
-            onChange={onChange}
-            className="rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
-            placeholder="+371 2X XXX XXX"
-          />
+          <input name="phone" value={form.phone} onChange={onChange} className={inputClass} placeholder="+371 2X XXX XXX" />
         </label>
         <label className="flex flex-col gap-1.5 text-sm">
           <span className="font-medium text-ink">E-pasts *</span>
@@ -76,28 +72,30 @@ export default function SignupForm() {
             name="email"
             value={form.email}
             onChange={onChange}
-            className="rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
+            className={inputClass}
             placeholder="janis@epasts.lv"
           />
         </label>
         <label className="flex flex-col gap-1.5 text-sm">
           <span className="font-medium text-ink">Auto marka un modelis</span>
-          <input
-            name="model"
-            value={form.model}
-            onChange={onChange}
-            className="rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
-            placeholder="Piem., Tesla Model 3"
-          />
+          <input name="model" value={form.model} onChange={onChange} className={inputClass} placeholder="Piem., Tesla Model 3" />
+        </label>
+        <label className="flex flex-col gap-1.5 text-sm">
+          <span className="font-medium text-ink">Vēlamais datums *</span>
+          <input type="date" name="date" min={today} value={form.date} onChange={onChange} className={inputClass} />
+        </label>
+        <label className="flex flex-col gap-1.5 text-sm">
+          <span className="font-medium text-ink">Vēlamais laiks *</span>
+          <input type="time" name="time" value={form.time} onChange={onChange} className={inputClass} />
         </label>
         <label className="flex flex-col gap-1.5 text-sm sm:col-span-2">
-          <span className="font-medium text-ink">Pilsēta / novads</span>
+          <span className="font-medium text-ink">Vieta (adrese Rīgā vai Rīgas reģionā) *</span>
           <input
-            name="city"
-            value={form.city}
+            name="place"
+            value={form.place}
             onChange={onChange}
-            className="rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
-            placeholder="Rīga"
+            className={inputClass}
+            placeholder="Iela, mājas numurs, pilsēta / novads"
           />
         </label>
         <label className="flex flex-col gap-1.5 text-sm sm:col-span-2">
@@ -107,8 +105,8 @@ export default function SignupForm() {
             value={form.message}
             onChange={onChange}
             rows={3}
-            className="resize-none rounded-md border border-ink/15 px-3.5 py-2.5 text-ink outline-none focus:border-brand-500"
-            placeholder="Vēlamais laiks, papildu informācija..."
+            className={`${inputClass} resize-none`}
+            placeholder="Papildu informācija, ko vēlaties mums paziņot..."
           />
         </label>
       </div>
@@ -116,11 +114,10 @@ export default function SignupForm() {
       {error && <p className="mt-4 text-sm font-medium text-red-600">{error}</p>}
 
       <p className="mt-5 text-xs leading-relaxed text-ink/45">
-        Nosūtot formu, jūs piekrītat, ka izmantosim šos datus, lai sazinātos par jūsu pieteikumu. Vairāk
-        mūsu{' '}
-        <a href="/privatuma-politika" className="underline">
+        Nosūtot formu, jūs piekrītat, ka izmantosim šos datus, lai sazinātos par jūsu pieteikumu. Vairāk mūsu{' '}
+        <Link to="/privatuma-politika" className="underline">
           privātuma politikā
-        </a>
+        </Link>
         .
       </p>
 

@@ -3,15 +3,15 @@ import { useState } from 'react'
 const FAQS = [
   {
     q: 'Cik ilgi aizņem pārbaude?',
-    a: 'Standarta SOH tests aizņem apmēram 20–30 minūtes. Padziļinātais audits ar plašāku analīzi — 2–4 stundas.',
+    a: 'SOH tests aizņem apmēram 20–30 minūtes.',
   },
   {
     q: 'Vai atskaite derīga, pārdodot auto citā valstī?',
     a: 'Jā, atskaite atspoguļo mērījumus, kas balstīti uz vispārpieņemtu metodiku, un to var uzrādīt arī ārpus Latvijas.',
   },
   {
-    q: 'Vai jums jābrauc pie manis, vai es varu atbraukt pie jums?',
-    a: 'Piedāvājam abas iespējas — izbraukumu pie jums Rīgā un Latvijā, vai pārbaudi pie mums uz vietas.',
+    q: 'Vai jūs atbraucat pie manis?',
+    a: 'Jā. Pārbaudi veicam jūsu norādītajā vietā Rīgas reģionā. Pieteikumā norādiet vēlamo laiku un vietu, un mēs sazināsimies, lai precizētu detaļas.',
   },
   {
     q: 'Kādus elektroauto jūs pārbaudāt?',
