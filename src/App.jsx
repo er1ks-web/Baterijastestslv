@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollToTop.jsx'
 import Home from './pages/Home.jsx'
 import WhatIsSoh from './pages/WhatIsSoh.jsx'
 import ForBusiness from './pages/ForBusiness.jsx'
+import Contact from './pages/Contact.jsx'
 import Privacy from './pages/Privacy.jsx'
 import Terms from './pages/Terms.jsx'
 
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/kas-ir-soh" element={<WhatIsSoh />} />
           <Route path="/uznemumiem" element={<ForBusiness />} />
+          <Route path="/kontakti" element={<Contact />} />
           <Route path="/privatuma-politika" element={<Privacy />} />
           <Route path="/lietosanas-noteikumi" element={<Terms />} />
         </Routes>

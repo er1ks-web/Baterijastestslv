@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: 'Atskaite', to: '/#atskaite' },
   { label: 'Cenas', to: '/#cenas' },
   { label: 'Jautājumi', to: '/#buj' },
+  { label: 'Kontakti', to: '/kontakti' },
 ]
 
 export default function Header() {

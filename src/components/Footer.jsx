@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from './Logo.jsx'
+import { COMPANY } from '../config/company.js'
 
 export default function Footer() {
   return (
@@ -31,13 +32,16 @@ export default function Footer() {
           <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-paper/40">Kontakti</h3>
           <ul className="mt-4 space-y-2.5 text-sm">
             <li>
-              <a href="tel:+37100000000" className="hover:text-paper">+371 00 000 000</a>
-              <span className="ml-2 text-xs text-paper/35">(jāatjaunina)</span>
+              <a href={COMPANY.phoneHref} className="hover:text-paper">{COMPANY.phone}</a>
+              {COMPANY.phoneIsPlaceholder && <span className="ml-2 text-xs text-paper/35">(jāatjaunina)</span>}
             </li>
             <li>
-              <a href="mailto:info@baterijastests.lv" className="hover:text-paper">info@baterijastests.lv</a>
+              <a href={`mailto:${COMPANY.email}`} className="hover:text-paper">{COMPANY.email}</a>
             </li>
-            <li className="text-paper/50">Rīga un Rīgas reģions</li>
+            <li className="text-paper/50">{COMPANY.serviceArea}</li>
+            <li>
+              <Link to="/kontakti" className="hover:text-paper">Kontakti un rekvizīti →</Link>
+            </li>
           </ul>
         </div>
       </div>
