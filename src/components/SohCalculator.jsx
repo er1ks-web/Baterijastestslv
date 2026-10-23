@@ -70,7 +70,7 @@ export default function SohCalculator() {
   const priceLoss = Math.round((priceNum * lossShare) / 50) * 50
 
   const bars = [
-    { label: 'Kad auto bija jauns', km: model.km, color: 'bg-paper/25' },
+    { label: 'Kad auto bija jauns', km: model.km, color: 'bg-paper/85' },
     { label: 'Tagad, ar pilnu uzlādi', km: rangeNow, color: band.bar },
     { label: 'Ziemā, reāli', km: rangeWinter, color: `${band.bar} opacity-60` },
   ]
