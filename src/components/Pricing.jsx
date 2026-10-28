@@ -22,7 +22,7 @@ export default function Pricing() {
           <div>
             <p className="text-sm text-paper/50">EV akumulatora SOH tests</p>
             <p className="mt-2 font-display text-6xl font-semibold">€90</p>
-            <p className="mt-2 text-sm text-paper/50">Ilgums: 20–30 min</p>
+            <p className="mt-2 text-sm text-paper/50">Ilgums: 15 min</p>
             <Link
               to="/#pieteikties"
               className="mt-6 inline-block rounded-md bg-paper px-6 py-3 text-sm font-semibold text-night transition hover:bg-white"

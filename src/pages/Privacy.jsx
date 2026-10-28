@@ -12,9 +12,8 @@ export default function Privacy() {
         <div>
           <h2 className="font-display text-lg font-semibold text-ink">1. Pārzinis</h2>
           <p className="mt-2">
-            Personas datu apstrādes pārzinis ir Baterijastests.lv [jāaizpilda uzņēmuma nosaukums,
-            reģistrācijas numurs un juridiskā adrese]. Ar mums var sazināties, rakstot uz
-            info@baterijastests.lv.
+            Personas datu apstrādes pārzinis ir Strada Group SIA, reģistrācijas numurs 40203630950
+            (mājaslapa Baterijastests.lv). Ar mums var sazināties, rakstot uz info@baterijastests.lv.
           </p>
         </div>
         <div>

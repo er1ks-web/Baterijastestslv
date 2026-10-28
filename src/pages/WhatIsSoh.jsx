@@ -28,7 +28,7 @@ const METHODS = [
   {
     name: 'Baterijastests.lv',
     shows: 'SOH procentu, kapacitāti, ciklus un kļūdu pārbaudi',
-    time: '20–30 min',
+    time: '15 min',
     doc: 'Jā, PDF atskaite',
     fit: 'Pirkšanai, pārdošanai un sarunām par cenu',
     highlight: true,

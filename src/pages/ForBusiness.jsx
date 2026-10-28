@@ -50,7 +50,7 @@ const BENEFITS = [
 const STEPS = [
   { title: 'Pieteikums', text: 'Norādiet, cik auto un kur tie atrodas. Darba dienā sazināmies.' },
   { title: 'Piedāvājums', text: 'Sagatavojam cenu jūsu apjomam, ņemot vērā auto skaitu, grafiku un vietu.' },
-  { title: 'Pārbaude uz vietas', text: 'Atbraucam pie jums. Katram auto nepieciešamas 20–30 minūtes.' },
+  { title: 'Pārbaude uz vietas', text: 'Atbraucam pie jums. Katram auto nepieciešamas apmēram 15 minūtes.' },
   { title: 'Atskaites un rēķins', text: 'Katrs auto saņem savu atskaiti. Rēķinu izrakstām uzņēmumam.' },
 ]
 
@@ -61,7 +61,7 @@ const FAQS = [
   },
   {
     q: 'Cik auto var pārbaudīt vienā vizītē?',
-    a: 'Standarta pārbaude aizņem 20–30 minūtes uz auto, tāpēc vienā vizītē var apskatīt vairākus. Konkrēto skaitu saskaņojam iepriekš.',
+    a: 'Pārbaude aizņem apmēram 15 minūtes uz auto, tāpēc vienā vizītē var apskatīt vairākus. Konkrēto skaitu saskaņojam iepriekš.',
   },
   {
     q: 'Vai atbraucat pie mums?',

@@ -3,7 +3,7 @@ import { useState } from 'react'
 const FAQS = [
   {
     q: 'Cik ilgi aizņem pārbaude?',
-    a: 'SOH tests aizņem apmēram 20–30 minūtes.',
+    a: 'SOH tests aizņem apmēram 15 minūtes.',
   },
   {
     q: 'Vai atskaite derīga, pārdodot auto citā valstī?',

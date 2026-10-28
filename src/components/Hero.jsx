@@ -37,7 +37,7 @@ export default function Hero() {
               Baterija nolietojas klusi. <span className="text-brand-600">Skaitlis to pasaka skaļi.</span>
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink/75">
-              20–30 minūšu diagnostikā uzzināsiet elektroauto akumulatora reālo stāvokli (SOH) un
+              15 minūšu diagnostikā uzzināsiet elektroauto akumulatora reālo stāvokli (SOH) un
               saņemsiet rakstisku atskaiti, ko var uzrādīt otrai darījuma pusei.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -91,8 +91,8 @@ export default function Hero() {
 
         <dl className="mt-14 grid grid-cols-3 gap-6 border-t border-ink/10 pt-8 sm:max-w-xl">
           <div>
-            <dt className="font-display text-2xl font-semibold text-ink">30′</dt>
-            <dd className="text-xs text-ink/65">vidējais pārbaudes laiks</dd>
+            <dt className="font-display text-2xl font-semibold text-ink">15′</dt>
+            <dd className="text-xs text-ink/65">pārbaudes ilgums</dd>
           </div>
           <div>
             <dt className="font-display text-2xl font-semibold text-ink">OBD</dt>

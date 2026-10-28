@@ -29,7 +29,7 @@ export default function HowItWorks() {
           <p className="font-display text-sm italic text-brand-600">Process</p>
           <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">No pieteikuma līdz atskaitei</h2>
           <p className="mt-4 text-sm leading-relaxed text-ink/70">
-            Viss process aizņem apmēram 30 minūtes un notiek jūsu norādītajā vietā.
+            Pati pārbaude aizņem apmēram 15 minūtes un notiek jūsu norādītajā vietā.
           </p>
         </div>
 

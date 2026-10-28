@@ -77,15 +77,12 @@ export default function Contact() {
         <div className="self-start rounded-lg border border-ink/10 bg-surface p-6 shadow-soft sm:p-8">
           <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">Rekvizīti</p>
           <dl className="mt-5 divide-y divide-ink/10 text-sm">
-            {REKVIZITI_ROWS.map(([label, key]) => {
-              const value = COMPANY.rekviziti[key]
-              return (
-                <div key={key} className="grid gap-1 py-3 sm:grid-cols-[9rem_1fr] sm:gap-4">
-                  <dt className="text-ink/65">{label}</dt>
-                  <dd className={value ? 'break-words text-ink' : 'text-amber-600'}>{value || '[jāaizpilda]'}</dd>
-                </div>
-              )
-            })}
+            {REKVIZITI_ROWS.filter(([, key]) => COMPANY.rekviziti[key]).map(([label, key]) => (
+              <div key={key} className="grid gap-1 py-3 sm:grid-cols-[9rem_1fr] sm:gap-4">
+                <dt className="text-ink/65">{label}</dt>
+                <dd className="break-words text-ink">{COMPANY.rekviziti[key]}</dd>
+              </div>
+            ))}
           </dl>
         </div>
       </div>
