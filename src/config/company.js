@@ -7,6 +7,9 @@ export const COMPANY = {
   email: 'info@baterijastests.lv',
   serviceArea: 'Rīga un Rīgas reģions',
   hours: '',
+  // TESTING: inquiries go to this inbox via FormSubmit. Change the address (or the whole URL)
+  // to the real recipient before launch. The first submission triggers a one-time activation email.
+  formEndpoint: 'https://formsubmit.co/ajax/rxstrazdins@gmail.com',
   rekviziti: {
     name: 'Strada Group SIA',
     regNo: '40203630950',

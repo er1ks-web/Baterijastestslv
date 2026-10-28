@@ -1,30 +1,51 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { sendForm } from '../lib/sendForm.js'
 
 const VOLUMES = ['1–5 auto', '6–20 auto', '21–50 auto', 'Vairāk nekā 50 auto', 'Vēl nezinu']
 
-const initialForm = { company: '', name: '', phone: '', email: '', volume: '', message: '' }
+const initialForm = { website: '', company: '', name: '', phone: '', email: '', volume: '', message: '' }
 
 const inputClass =
   'rounded-md border border-ink/15 bg-surface px-3.5 py-2.5 text-ink outline-none focus:border-brand-500'
 
-// NOTE: this form does not send data anywhere yet. Wire it up to a real
-// endpoint (e.g. Formspree, EmailJS, or a custom API route) before launch.
 export default function PartnerForm() {
   const [form, setForm] = useState(initialForm)
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
   const [error, setError] = useState('')
 
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault()
     if (!form.company || !form.name || !form.phone || !form.email) {
       setError('Lūdzu, aizpildiet uzņēmumu, vārdu, tālruni un e-pastu.')
       return
     }
     setError('')
-    setSubmitted(true)
+    if (form.website) {
+      setSubmitted(true)
+      return
+    }
+
+    setSending(true)
+    try {
+      await sendForm('Jauns uzņēmuma pieteikums (Baterijastests.lv)', {
+        Uzņēmums: form.company,
+        Kontaktpersona: form.name,
+        Tālrunis: form.phone,
+        'E-pasts': form.email,
+        'Cik auto plānots pārbaudīt': form.volume || '-',
+        'Uzdevums vai komentārs': form.message || '-',
+        _replyto: form.email,
+      })
+      setSubmitted(true)
+    } catch {
+      setError('Neizdevās nosūtīt pieteikumu. Lūdzu, mēģiniet vēlreiz pēc brīža.')
+    } finally {
+      setSending(false)
+    }
   }
 
   if (submitted) {
@@ -93,6 +114,17 @@ export default function PartnerForm() {
         </label>
       </div>
 
+      <input
+        type="text"
+        name="website"
+        value={form.website}
+        onChange={onChange}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="absolute -left-[9999px] h-0 w-0 opacity-0"
+      />
+
       {error && <p className="mt-4 text-sm font-medium text-red-600">{error}</p>}
 
       <p className="mt-5 text-xs leading-relaxed text-ink/60">
@@ -105,9 +137,10 @@ export default function PartnerForm() {
 
       <button
         type="submit"
-        className="mt-6 w-full rounded-md bg-brand-600 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-700 sm:w-auto"
+        disabled={sending}
+        className="mt-6 w-full rounded-md bg-brand-600 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
       >
-        Saņemt piedāvājumu
+        {sending ? 'Sūta...' : 'Saņemt piedāvājumu'}
       </button>
     </form>
   )
