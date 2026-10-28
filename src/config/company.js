@@ -7,8 +7,10 @@ export const COMPANY = {
   email: 'info@baterijastests.lv',
   serviceArea: 'Rīga un Rīgas reģions',
   hours: '',
-  // TESTING: inquiries go to this inbox via FormSubmit. Change the address (or the whole URL)
-  // to the real recipient before launch. The first submission triggers a one-time activation email.
+  // Inquiry delivery. If `web3formsKey` is set, forms use Web3Forms (fast, recommended); the key is
+  // emailed to the recipient when they enter their address at web3forms.com, and decides who receives
+  // the inquiries. Otherwise they fall back to FormSubmit below (TESTING inbox, slow to answer).
+  web3formsKey: '',
   formEndpoint: 'https://formsubmit.co/ajax/rxstrazdins@gmail.com',
   rekviziti: {
     name: 'Strada Group SIA',
