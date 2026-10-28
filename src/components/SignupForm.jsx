@@ -9,10 +9,14 @@ const initialForm = {
   email: '',
   model: '',
   date: '',
-  time: '',
+  hour: '',
+  minute: '',
   place: '',
   message: '',
 }
+
+const HOURS = Array.from({ length: 24 }, (_, i) => String(i).padStart(2, '0'))
+const MINUTES = ['00', '15', '30', '45']
 
 const inputClass =
   'rounded-md border border-ink/15 bg-surface px-3.5 py-2.5 text-ink outline-none focus:border-brand-500'
@@ -31,7 +35,7 @@ export default function SignupForm() {
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    if (!form.name || !form.phone || !form.email || !form.date || !form.time || !form.place.trim()) {
+    if (!form.name || !form.phone || !form.email || !form.date || !form.hour || !form.minute || !form.place.trim()) {
       setError('Lūdzu, aizpildiet vārdu, tālruni, e-pastu, vēlamo datumu, laiku un vietu.')
       return
     }
@@ -49,7 +53,7 @@ export default function SignupForm() {
         'E-pasts': form.email,
         'Auto marka un modelis': form.model || '-',
         'Vēlamais datums': form.date,
-        'Vēlamais laiks': form.time,
+        'Vēlamais laiks': `${form.hour}:${form.minute}`,
         Vieta: form.place,
         Ziņa: form.message || '-',
         _replyto: form.email,
@@ -112,10 +116,28 @@ export default function SignupForm() {
           <span className="font-medium text-ink">Vēlamais datums *</span>
           <input type="date" name="date" min={today} value={form.date} onChange={onChange} className={inputClass} />
         </label>
-        <label className="flex flex-col gap-1.5 text-sm">
+        <div className="flex flex-col gap-1.5 text-sm">
           <span className="font-medium text-ink">Vēlamais laiks *</span>
-          <input type="time" name="time" value={form.time} onChange={onChange} className={inputClass} />
-        </label>
+          <div className="flex items-center gap-2">
+            <select name="hour" aria-label="Stunda" value={form.hour} onChange={onChange} className={`${inputClass} w-full !px-2.5`}>
+              <option value="">hh</option>
+              {HOURS.map((h) => (
+                <option key={h} value={h}>
+                  {h}
+                </option>
+              ))}
+            </select>
+            <span className="text-ink/60">:</span>
+            <select name="minute" aria-label="Minūtes" value={form.minute} onChange={onChange} className={`${inputClass} w-full !px-2.5`}>
+              <option value="">mm</option>
+              {MINUTES.map((m) => (
+                <option key={m} value={m}>
+                  {m}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
         <label className="flex flex-col gap-1.5 text-sm sm:col-span-2">
           <span className="font-medium text-ink">Vieta (adrese Rīgā vai Rīgas reģionā) *</span>
           <input
