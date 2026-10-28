@@ -41,8 +41,12 @@ export default function PartnerForm() {
         _replyto: form.email,
       })
       setSubmitted(true)
-    } catch {
-      setError('Neizdevās nosūtīt pieteikumu. Lūdzu, mēģiniet vēlreiz pēc brīža.')
+    } catch (err) {
+      setError(
+        err.timeout
+          ? 'Nevarējām apstiprināt, vai pieteikums ir nosūtīts. Lūdzu, pārbaudiet savienojumu un mēģiniet vēlreiz vai sazinieties ar mums pa tālruni.'
+          : 'Neizdevās nosūtīt pieteikumu. Lūdzu, mēģiniet vēlreiz pēc brīža.',
+      )
     } finally {
       setSending(false)
     }
