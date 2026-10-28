@@ -57,7 +57,7 @@ export default function SignupForm() {
         Vieta: form.place,
         Ziņa: form.message || '-',
         _replyto: form.email,
-      })
+      }, 'pieteikums')
       setSubmitted(true)
     } catch (err) {
       setError(

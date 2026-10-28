@@ -39,7 +39,7 @@ export default function PartnerForm() {
         'Cik auto plānots pārbaudīt': form.volume || '-',
         'Uzdevums vai komentārs': form.message || '-',
         _replyto: form.email,
-      })
+      }, 'uznemums')
       setSubmitted(true)
     } catch (err) {
       setError(
