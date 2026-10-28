@@ -10,7 +10,7 @@ export const COMPANY = {
   // Inquiry delivery. If `web3formsKey` is set, forms use Web3Forms (fast, recommended); the key is
   // emailed to the recipient when they enter their address at web3forms.com, and decides who receives
   // the inquiries. Otherwise they fall back to FormSubmit below (TESTING inbox, slow to answer).
-  web3formsKey: '',
+  web3formsKey: '8442291726260746b139ca2bb6187085',
   formEndpoint: 'https://formsubmit.co/ajax/rxstrazdins@gmail.com',
   rekviziti: {
     name: 'Strada Group SIA',
