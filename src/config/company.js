@@ -1,9 +1,9 @@
 // Single source of truth for contact and company details.
 // Rows in `rekviziti` with an empty value are hidden on the Contact page.
 export const COMPANY = {
-  phone: '+371 00 000 000',
-  phoneHref: 'tel:+37100000000',
-  phoneIsPlaceholder: true,
+  phone: '+371 28483248',
+  phoneHref: 'tel:+37128483248',
+  phoneIsPlaceholder: false,
   email: 'baterijastests@gmail.com',
   serviceArea: 'Rīga un Rīgas reģions',
   hours: '',

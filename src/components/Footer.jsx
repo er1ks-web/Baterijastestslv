@@ -51,7 +51,7 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} Baterijastests.lv. Visas tiesības aizsargātas.</p>
           <div className="flex gap-5">
             <Link to="/privatuma-politika" className="hover:text-ink">Privātuma politika</Link>
-            <Link to="/lietosanas-noteikumi" className="hover:text-ink">Lietošanas noteikumi</Link>
+            <Link to="/sikdatnu-politika" className="hover:text-ink">Sīkdatņu politika</Link>
           </div>
         </div>
       </div>
