@@ -29,7 +29,8 @@ jobs:
 
       - run: npm run build
         env:
-          VITE_BASE: /${{ github.event.repository.name }}/
+          # The site is served from the custom domain root (baterijastests.lv), not /<repo-name>/.
+          VITE_BASE: /
 
       # GitHub Pages serves 404.html for unknown paths, which lets direct links
       # like /kas-ir-soh load the app instead of a plain 404 page.
