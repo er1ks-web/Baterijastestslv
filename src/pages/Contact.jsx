@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { COMPANY } from '../config/company.js'
 
@@ -21,14 +20,6 @@ function Row({ label, children }) {
 }
 
 export default function Contact() {
-  useEffect(() => {
-    const previous = document.title
-    document.title = 'Kontakti un rekvizīti | Baterijastests.lv'
-    return () => {
-      document.title = previous
-    }
-  }, [])
-
   return (
     <section className="mx-auto max-w-6xl px-5 py-16 md:py-24">
       <p className="font-display text-sm italic text-brand-600">Kontakti</p>

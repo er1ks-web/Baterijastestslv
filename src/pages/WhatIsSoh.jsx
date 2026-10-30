@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import SohCalculator from '../components/SohCalculator.jsx'
 import FinalCta from '../components/FinalCta.jsx'
@@ -43,14 +42,6 @@ const FACTORS = [
 ]
 
 export default function WhatIsSoh() {
-  useEffect(() => {
-    const previous = document.title
-    document.title = 'Kas ir SOH: akumulatora veselības stāvoklis | Baterijastests.lv'
-    return () => {
-      document.title = previous
-    }
-  }, [])
-
   return (
     <>
       <section className="border-b border-ink/10 bg-canvas">

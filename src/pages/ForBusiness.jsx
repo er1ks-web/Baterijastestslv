@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import Faq from '../components/Faq.jsx'
 import PartnerForm from '../components/PartnerForm.jsx'
 
@@ -78,14 +77,6 @@ const FAQS = [
 ]
 
 export default function ForBusiness() {
-  useEffect(() => {
-    const previous = document.title
-    document.title = 'Uzņēmumiem un autotirgotājiem | Baterijastests.lv'
-    return () => {
-      document.title = previous
-    }
-  }, [])
-
   return (
     <>
       <section className="border-b border-ink/10 bg-canvas">
