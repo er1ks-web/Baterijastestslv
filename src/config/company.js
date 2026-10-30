@@ -4,18 +4,13 @@ export const COMPANY = {
   phone: '+371 00 000 000',
   phoneHref: 'tel:+37100000000',
   phoneIsPlaceholder: true,
-  email: 'info@baterijastests.lv',
+  email: 'baterijastests@gmail.com',
   serviceArea: 'Rīga un Rīgas reģions',
   hours: '',
-  // Inquiry delivery, in order of preference:
-  // 1. `sheetsEndpoint`: the Google Apps Script web app link (see google-apps-script/Code.gs).
-  //    `sheetsSecret` must match SECRET in that script.
-  // 2. `web3formsKey`: emailed to the address the key was created for.
-  // 3. `formEndpoint` (FormSubmit): emailed, but its replies are slow.
-  sheetsEndpoint: '',
+  // Inquiries go to a Google Sheet through this Apps Script web app (see google-apps-script/Code.gs).
+  // `sheetsSecret` must match SECRET in that script.
+  sheetsEndpoint: 'https://script.google.com/macros/s/AKfycbzMpes25I8E9TEAo1_0KtwhY9ahFRCmja80qHhC8q7MYSmlQwCzQILhZ_c4X6jRMlA2RQ/exec',
   sheetsSecret: '53d82d01e21949bfbbb2a50d',
-  web3formsKey: '84422917-2626-0746-b139-ca2bb6187085',
-  formEndpoint: 'https://formsubmit.co/ajax/rxstrazdins@gmail.com',
   rekviziti: {
     name: 'Strada Group SIA',
     regNo: '40203630950',

@@ -2,7 +2,7 @@
 // Paste this whole file into Extensions > Apps Script of the Google Sheet, then deploy as a web app.
 
 const SECRET = '53d82d01e21949bfbbb2a50d' // must match `sheetsSecret` in src/config/company.js
-const NOTIFY_EMAIL = 'info@baterijastests.lv' // set to '' to turn off email notifications
+const NOTIFY_EMAIL = 'baterijastests@gmail.com' // set to '' to turn off email notifications
 const STATUSES = ['Jauns', 'Apstiprināts', 'Pabeigts', 'Atcelts']
 const SHEETS = { pieteikums: 'Pieteikumi', uznemums: 'Uzņēmumi' }
 const MAX_LEN = 1500

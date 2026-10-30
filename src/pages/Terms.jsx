@@ -45,7 +45,7 @@ export default function Terms() {
         </div>
         <div>
           <h2 className="font-display text-lg font-semibold text-ink">6. Kontakti</h2>
-          <p className="mt-2">Jautājumu gadījumā rakstiet uz info@baterijastests.lv.</p>
+          <p className="mt-2">Jautājumu gadījumā rakstiet uz baterijastests@gmail.com.</p>
         </div>
       </div>
     </section>
