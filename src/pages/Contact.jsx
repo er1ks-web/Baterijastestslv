@@ -50,7 +50,6 @@ export default function Contact() {
             </a>
           </Row>
           <Row label="Kur strādājam">{COMPANY.serviceArea}</Row>
-          {COMPANY.hours && <Row label="Darba laiks">{COMPANY.hours}</Row>}
 
           <div className="flex flex-wrap gap-3 pt-2">
             <a

@@ -6,7 +6,6 @@ export const COMPANY = {
   phoneIsPlaceholder: false,
   email: 'baterijastests@gmail.com',
   serviceArea: 'Rīga un Rīgas reģions',
-  hours: '',
   // Inquiries go to a Google Sheet through this Apps Script web app (see google-apps-script/Code.gs).
   // `sheetsSecret` must match SECRET in that script.
   sheetsEndpoint: 'https://script.google.com/macros/s/AKfycbzMpes25I8E9TEAo1_0KtwhY9ahFRCmja80qHhC8q7MYSmlQwCzQILhZ_c4X6jRMlA2RQ/exec',
