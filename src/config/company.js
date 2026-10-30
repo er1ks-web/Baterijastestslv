@@ -10,11 +10,18 @@ export const COMPANY = {
   // `sheetsSecret` must match SECRET in that script.
   sheetsEndpoint: 'https://script.google.com/macros/s/AKfycbzMpes25I8E9TEAo1_0KtwhY9ahFRCmja80qHhC8q7MYSmlQwCzQILhZ_c4X6jRMlA2RQ/exec',
   sheetsSecret: '53d82d01e21949bfbbb2a50d',
+  // The same address in parts, for the structured data in scripts/generate-pages.mjs.
+  addressParts: {
+    street: 'Tēriņu iela 3',
+    district: 'Zemgales priekšpilsēta',
+    city: 'Rīga',
+    postalCode: 'LV-1004',
+  },
   rekviziti: {
     name: 'Strada Group SIA',
     regNo: '40203630950',
     vatNo: '',
-    address: '',
+    address: 'Tēriņu iela 3, Zemgales priekšpilsēta, Rīga, LV-1004',
     bank: '',
     account: '',
   },

@@ -25,6 +25,13 @@ const businessData = {
   email: COMPANY.email,
   description: PAGES['/'].description,
   priceRange: '€90',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: COMPANY.addressParts.street,
+    addressLocality: COMPANY.addressParts.city,
+    postalCode: COMPANY.addressParts.postalCode,
+    addressCountry: 'LV',
+  },
   areaServed: [
     { '@type': 'City', name: 'Rīga' },
     { '@type': 'AdministrativeArea', name: 'Rīgas reģions' },

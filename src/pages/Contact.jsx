@@ -5,7 +5,7 @@ const REKVIZITI_ROWS = [
   ['Uzņēmums', 'name'],
   ['Reģ. Nr.', 'regNo'],
   ['PVN reģ. Nr.', 'vatNo'],
-  ['Jurid. adrese', 'address'],
+  ['Adrese', 'address'],
   ['Banka', 'bank'],
   ['Konts', 'account'],
 ]
